@@ -1,3 +1,20 @@
+var pContainerHeight = $('.mulher').height();
+
+$(window).scroll(function() {
+		var wScroll = $(this).scrollTop();
+		if (wScroll <= 371) {
+
+			$('.logoOutubro').css({
+				'transform': 'translate(0px, '+wScroll /2 +'%)'
+			});
+
+			$('.laco').css({
+				'transform': 'translate(0px, -'+ wScroll /3.5 +'%)'
+			});
+		}
+});
+
+/**
 $('div.bgParallax').each(function(){
 	var $obj = $(this);
 
@@ -10,14 +27,6 @@ $('div.bgParallax').each(function(){
 
 	});
 });
+**/
 
-$('footer').footerReveal({ shadow: false, zIndex: -101 });
-/**$(window).scroll(function(){
-
-	var wScroll = $(this).scrollTop();
-
-	$('.tema').css({
-		'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-	});
-
-}); **/
+/**$('footer').footerReveal({ shadow: false, zIndex: -101 }); **/

@@ -10,7 +10,6 @@ body{
 	font:15px/1.3 'PT Sans', sans-serif;
 	color: #5e5b64;
 	position:relative;
-	z-index:0;
 }
 
 /** Parallax **/
@@ -28,6 +27,38 @@ body{
 	background-attachment: fixed;
 }
 
+.mulher{
+  position: relative;
+  height:600px;
+  background-image: url("../background3.jpg");
+  backgound-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.logoOutubro{
+  height: 120px;
+  width: 90%;
+  background-image: url("http://dudalina.com.br/outubrorosa/img/logo-campanha.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+.laco{
+  width: 100%;
+  height: 161px;
+  background-image: url("../laco.png");
+  background-repeat: no-repeat;
+  position: right bottom;
+  position: absolute;
+  left: 40%;
+  margin-left: -480px;
+  top: 600px;
+}
+
+
 h1 {
     font-family: 'PT Sans', normal;
     text-align: center;
@@ -43,7 +74,7 @@ h3{
 	text-shadow: 0 0.1px 0.1px #CD5C5C;
 
 }
-
+/**
 #slide1{
 background: url(data:image/jpeg;base64,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) 50% 0 no-repeat fixed;
   position: relative;
@@ -56,12 +87,8 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
 	attachment: fixed;
 	color: #484848 ;
 	text-shadow: 0 0.1px 0.1px #CD5C5C;
-
-
-}
+} **/
 #slide2 {
-  background: url(https://ap.imagensbrasil.org/images/fundo-branco.png) 50% 0 no-repeat fixed;
-    background-image: url("https://ap.imagensbrasil.org/images/fundo-branco.png");
     background-position-x: 50%;
     background-position-y: 0px;
     background-size: cover;
@@ -70,7 +97,7 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: initial;
+    background-color: #FFFFFF;
     color: #484848 ;
     height: 600px;
     padding: 170px 0 0 0;
@@ -94,8 +121,8 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     background-size: cover;
 }
 #slide4 {
-	background-image: url(/home/fanny/Desktop/Another_Test/videotest.jpg);
-  background-image: url("/home/fanny/Desktop/Another_Test/videotest.jpg");
+	background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWwQPohgJ0EvJZw2Ghw8qFLIwHyzvpADKP8d2zqjroyirckfajjQ) 50% 0 no-repeat fixed;
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWwQPohgJ0EvJZw2Ghw8qFLIwHyzvpADKP8d2zqjroyirckfajjQ");
   background-position-x: 50%;
   background-position-y: 0px;
   background-size: cover;
@@ -109,6 +136,7 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
   height: 600px;
   padding: 170px 0 0 0;
   background-size: cover;
+  overflow: hidden;
 
 }
 #slide5 {
@@ -128,10 +156,7 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     padding: 170px 0 0 0;
     background-size: cover;
 }
-
 #slide6 {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGm4oNwDF3GCJLX6SUiC05q1X1VqsHO-CQr7pLWgrLQnJyOlD3A) 50% 0 no-repeat fixed;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGm4oNwDF3GCJLX6SUiC05q1X1VqsHO-CQr7pLWgrLQnJyOlD3A");
     background-position-x: 50%;
     background-position-y: 0px;
     background-size: cover;
@@ -140,12 +165,12 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: initial;
+    background-color: #FFFFFF;
     color: #484848 ;
     height: 600px;
     padding: 170px 0 0 0;
     background-size: cover;
-
+    overflow: hidden;
 }
 #slide7 {
   background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLm0gzVPfXH5TdwD9w-EYdRKMLrLtimAPLglcBhCHlTKZcOuTItw) 50% 0 no-repeat fixed;
@@ -163,6 +188,7 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     height: 600px;
     padding: 170px 0 0 0;
     background-size: cover;
+    overflow: hidden;
 
 }
 #slide8 {
@@ -178,28 +204,25 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     background-clip: initial;
     background-color: initial;
     color: #484848;
+    height: 30px;
     background-size: cover;
 }
-#main{
-	position:relative;
-	z-index:1;
 
-	background-color: #fff;
-
-	background-image:-webkit-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
-	background-image:-moz-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
-	background-image:radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
-
-	padding: 120px 0 600px;
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+.wrap-video{
+  position:absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  margin-top: -170px;
 }
-
 
 .bgParallax article {
   width: 70%;
   text-align: center;
   margin:0 auto;
-  padding:20% 0 0;
+  /**padding:20% 0 0;**/
 }
 .slide {
     position: relative;
@@ -210,8 +233,20 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PD
     box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
     transform-style: inherit;
 }
+/**
+.wrap-video{
+  height: auto;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  overflow: hidden;
+} **/
+
 article h1 {font-size:40px;}
-article p {line-height: 30px; font-size:20px; margin-top:15px;}
+article p {line-height: 30px; font-size:20px; margin-top:0px;}
 article p a {color:#FFFFFF; text-decoration:none; font-size:14px;}
 footer{
 	height: 245px;
