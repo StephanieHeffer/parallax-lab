@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
  }
@@ -98,7 +97,6 @@ input#control-nav {
   }
 /** Parallax **/
 .bgParallax {
-	font-family: 'PT Sans', normal;
 	color:#484848;
 	margin: 0 auto;
 	width: 100%;
@@ -143,14 +141,12 @@ input#control-nav {
 }
 
 h1 {
-    font-family: 'PT Sans', normal;
     text-align: center;
     font-size: 400%;
     color: #484848 ;
 		text-shadow: 0 2px 2px #CD5C5C;
     }
 h3{
-	font-family: 'PT Sans', normal;
 	text-align: center;
 	font-size: 180%;
 	color: #484848 ;
@@ -305,7 +301,8 @@ h3{
     background-clip: initial;
     background-color: initial;
     color: #484848;
-    height: 30px;
+    height: 70px;
+    padding: 10px 0 0 0;
     background-size: cover;
 }
 
@@ -390,7 +387,7 @@ article h1 {font-size:40px;}
 article p {line-height: 30px; font-size:20px; margin-top:0px;}
 article p a {color:#FFFFFF; text-decoration:none; font-size:14px;}
 footer{
-	height: 245px;
+	height: 400px;
 	color:#ccc;
 	font-size:12px;
 

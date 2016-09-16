@@ -3,7 +3,6 @@ var pContainerHeight = $('.mulher').height();
 $(window).scroll(function() {
 		var wScroll = $(this).scrollTop();
 		if (wScroll <= 371) {
-
 			$('.logoOutubro').css({
 				'transform': 'translate(0px, '+wScroll /2 +'%)'
 			});
@@ -23,6 +22,19 @@ $(window).scroll(function() {
 
 		  }
 
+      var video = document.getElementById('video2');
+      var startVideoScrollPosition = 2809;
+      var stopVideoScrollPosition = 3289;
+
+      if (wScroll <= stopVideoScrollPosition &&
+          wScroll >= startVideoScrollPosition) {
+          video.play();
+      }
+      else {
+          video.pause();
+      }
+
 });
+
 
 $('footer').footerReveal({ shadow: false, zIndex: -101 });
