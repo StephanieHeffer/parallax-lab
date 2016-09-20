@@ -37,4 +37,4 @@ $(window).scroll(function() {
 });
 
 
-$('footer').footerReveal({ shadow: false, zIndex: -101 });
+//$('footer').footerReveal({ shadow: false, zIndex: -101 });

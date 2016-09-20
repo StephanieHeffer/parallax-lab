@@ -11,21 +11,54 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="./js/jquery-2.1.3.min.js"></script>
     <script src="./js/functions.js"></script>
+    <script src="./js/slide.js"></script>
   </head>
   <body>
-    <header>
-      <h2><a href="#" title="Outubro Rosa" style="text-center">Outubro Rosa</a></h2>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+    <header align="center" style="
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 5px;
+    height: 99px;
+">
+      <h2>
+        <a href="#" title="Outubro Rosa" style="text-decoration:none">Outubro Rosa</a>
+      </h2>
       <nav>
-        <ul class="l2">
-          <li><a href="http://drauziovarella.com.br" target="_blank" title="Drauzio">Drauzio</a></li>
+        <ul>
+        <li>
+          <a href="http://drauziovarella.com.br" target="_blank">
+          <img src="http://drauziovarella.com.br/wp-content/themes/drauzio_2015/images/logo.png" align="left" height="70px" alt="Dr. Drauzio Varella">
+        </a>
+        </li>
         </ul>
       </nav>
+      <section id="buttons">
+        <a href="#" class="prev">&laquo;</a>
+        <a href="#" class="next">&raquo;</a>
+      </section>
     </header>
     <header class="mulher">
       <div class="logoOutubro"></div>
       <div class="laco"></div>
     </header>
-    <section class="content">
+    <section id="contente" class="content">
       <div id="slide2" class="bgParallax" data-speed="15">
         <video autoplay="true" loop="" muted class="wrap-video1" >
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.mp4" type="video/mp4">
@@ -93,18 +126,34 @@
           <h1 style="z-index: 3; position: relative; color:#FFFFFF;">Lorem ipsum dolor sit amet</h1>
         </article>
       </div>
-      <div id="slide10" class="bgParallax" data-speed="15" align="center">
-        <a href="https://www.facebook.com/drauziovarella" target="_blank"><img src="facebook.png" height="50px"></a>   <a href="https://twitter.com/drauziovarella" target="_blank"><img src="twitter.png" height="50px"></a>  <a href="https://www.instagram.com/sitedrauziovarella/" target="_blank"><img src="instagram.png" height="50px"></a>
+      <div id="slide10" class="bgParallax" data-speed="15">
+        <article align="center">
+        <a href="https://www.facebook.com/drauziovarella" target="_blank">
+          <img src="facebook.png" height="40px"></a>
+        <a href="https://twitter.com/drauziovarella" target="_blank">
+          <img src="twitter.png" height="40px"></a>
+        <a href="https://www.instagram.com/sitedrauziovarella/" target="_blank">
+          <img src="instagram.png" height="40px"></a>
+        </article>
+          <!--COMPARTILHAR FACEBOOK-->
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fthebestmotherfuckingwebsite.co%2F&layout=button&mobile_iframe=true&width=97&height=20&appId"
+          width="97" height="20" style="border:none;overflow:hidden"
+          scrolling="no" frameborder="0" allowTransparency="true" align="right">
+          </iframe>
+        <!--<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDrauzio-Varella%2F521093161261878&layout=button&mobile_iframe=true&width=97&height=20&appId"
+        width="97" height="20" style="border:none;overflow:hidden"
+        scrolling="no" frameborder="0" allowTransparency="true">
+      </iframe> -->
       </div>
-    </section>
+  </section>
 
-  <footer>
+<footer>
 	    <ul>
 		   <li>
 			  <p class="home">Direção</p>
        <ul>
         <li>Name 1</li>
-			   <a class="logo" href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5VNT3lUrncVQJ6q0uBncUJ6h5pJeVHaXkuhXlQajeoZp_75oq8A">Company Name <i>&copy; 2016</i></a>
+        <li><a class="logo" href="http://uzumaki.com.br" target="_blank">Company Name <i>&copy; 2016</i></a></li>
        </ul>
        </li>
 		   <li>
@@ -156,41 +205,58 @@
       </li>
 	  </ul>
 </footer>
-<!--<footer>
-  <ul>
-   <li>
-    <p class="home">Home</p>
-    <a class="logo" href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5VNT3lUrncVQJ6q0uBncUJ6h5pJeVHaXkuhXlQajeoZp_75oq8A">Company Name <i>&copy; 2016</i></a>
-   </li>
-   <li>
-    <p class="services">Services</p>
-
-  <ul>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">3D modeling</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Web development</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Mobile development</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Web &amp; Print Design</a></li>
-  </ul>
-   </li>
-   <li>
-    <p class="reachus">Reach us</p>
-  <ul>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Instagram</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Twitter</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Facebook</a></li>
-    <li>555-123456789</li>
-  </ul>
-    </li>
-    <li>
-      <p class="clients">Clients</p>
-  <ul>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Login Area</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">Support Center</a></li>
-    <li><a href="http://www.uzumaki.com.br/" target="_blank">FAQ</a></li>
-  </ul>
-   </li>
-  </ul>
+<!--
+FOOTER CELULAR
+<footer class="special-footer tab-tpl" initiated="true">
+  <div class="container wrap-footer">
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-4">
+        <div class="logo">
+          <a class="logo" href="http://www.uzumaki.com.br/"></a>
+        </div>
+      </div>
+      <div class="col-xs-8 col-sm-18 col-md-20">
+        <div class="staff js-masonry" data-masonry="{ &quot;itemSelector&quot;: &quot;.inner-staff&quot;, &quot;transitionDuration&quot;: 0 }" style="position: relative; height: 331px;">
+          <div class="inner-staff" style="position: absolute; left: 595px; top: 0px;">
+            <strong class="area-label">Direção</strong>
+            <ul class="area-list">
+              <li class="area-list-item">Name1</li>
+            </ul>
+          </div>
+          <div class="inner-staff" style="position: absolute; left: 595px; top: 41px;">
+            <strong class="area-label">Edição</strong>
+            <ul class="area-list">
+              <li class="area-list-item">Name1</li>
+            </ul>
+          </div>
+          <div class="inner-staff" style="position: absolute; left: 595px; top: 82px;">
+            <strong class="area-label">Reportagem</strong>
+            <ul class="area-list">
+              <li class="area-list-item">Name1</li>
+              <li class="area-list-item">Name2</li>
+              <li class="area-list-item">Name3</li>
+              <li class="area-list-item">Name4</li>
+            </ul>
+          </div>
+          <div class="inner-staff" style="position: absolute; left: 595px; top: 186px;">
+            <strong class="area-label">UX/design</strong>
+            <ul class="area-list">
+              <li class="area-list-item">Name1</li>
+              <li class="area-list-item">Name2</li>
+              <li class="area-list-item">Name3</li>
+            </ul>
+          </div>
+          <div class="inner-staff" style="position: absolute; left: 595px; top: 269px;">
+            <strong class="area-label">Vídeo</strong>
+            <ul class="area-list">
+              <li class="area-list-item">Name1</li>
+              <li class="area-list-item">Name2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer> -->
-
 </body>
 </html>
