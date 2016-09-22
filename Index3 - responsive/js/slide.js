@@ -20,6 +20,26 @@ $(function(){
 
   $(".next").click(function(e){
     e.preventDefault();
+
+    let windowCurrentScrollPosition = $(window).scrollTop();
+    let slideList = $('.bgParallax');
+    let totalSlides = slideList.length;
+
+    for(let slideIndex = 0; slideIndex < totalSlides; slideIndex++){
+      let slide = slideList[slideIndex];
+      let slideOffsetTop = slide.offsetTop;
+
+      if(windowCurrentScrollPosition < slideOffsetTop){
+        $('html, body').animate({
+            scrollTop: slideOffsetTop
+          }, 2000);
+        break;
+      }
+    }
+  });
+
+/*  $(".next").click(function(e){
+    e.preventDefault();
     var wScroll = $(window).scrollTop();
     if (wScroll < 621){
       $('html, body').animate({
@@ -57,7 +77,7 @@ $(function(){
       $('html, body').animate({
           scrollTop: '6741'
     }, 2000);}
-    });
+  });*/
 
   $(".prev").click(function(e){
     e.preventDefault();
