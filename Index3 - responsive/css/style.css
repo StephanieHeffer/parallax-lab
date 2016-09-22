@@ -104,7 +104,7 @@ section#buttons{
   bottom: 0;
   right:0;
   margin: 10px;
-  z-index: 10px;
+  z-index: 10;
 }
 section#buttons a{
   background: #333;
@@ -117,6 +117,7 @@ section#buttons a{
   text-decoration: none;
   font: 35pt;
   opacity: 0.7;
+  z-index: 10;
 }
 section#buttons a:hover{
   background: #555;

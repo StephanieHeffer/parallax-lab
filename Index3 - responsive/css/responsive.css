@@ -32,10 +32,10 @@ div.mobile-colapse{
 
 .videoback{
   display: inline-block;
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
   background-size: cover;
-  max-height: 100%;
+  min-height: 100%;
   width: auto;
   height: auto;
   position: relative;

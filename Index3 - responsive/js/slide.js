@@ -5,31 +5,31 @@ $(function(){
   },function(){
     $("section#buttons").fadeOut();
   });
-/** Posição Slides
-  var sl_2 = 621;
-  var sl_3 = 1391;
-  var sl_4 = 2161;
-  var sl_5 = 2931;
-  var sl_6 = 3701;
-  var sl_7 = 4471;
-  var sl_8 = 5221;
-  var sl_9 = 5991;
-  var sl_10 = 6741;
-**/
-  console.log('logando');
+
+//Slide
+  function getSlideStructure(){
+    let scrollPosition = $(window).scrollTop();
+    let list = $('.bgParallax');
+    let total = list.length;
+
+    let slideStructure = {
+      windowCurrentScrollPosition: scrollPosition,
+      slideList: list,
+      totalSlides: total
+    };
+    return slideStructure;
+  }
 
   $(".next").click(function(e){
     e.preventDefault();
 
-    let windowCurrentScrollPosition = $(window).scrollTop();
-    let slideList = $('.bgParallax');
-    let totalSlides = slideList.length;
+    let s = getSlideStructure();
 
-    for(let slideIndex = 0; slideIndex < totalSlides; slideIndex++){
-      let slide = slideList[slideIndex];
+    for(let slideIndex = 0; slideIndex < s.totalSlides; slideIndex++){
+      let slide = s.slideList[slideIndex];
       let slideOffsetTop = slide.offsetTop;
 
-      if(windowCurrentScrollPosition < slideOffsetTop){
+      if(s.windowCurrentScrollPosition < slideOffsetTop){
         $('html, body').animate({
             scrollTop: slideOffsetTop
           }, 2000);
@@ -38,100 +38,22 @@ $(function(){
     }
   });
 
-/*  $(".next").click(function(e){
-    e.preventDefault();
-    var wScroll = $(window).scrollTop();
-    if (wScroll < 621){
-      $('html, body').animate({
-          scrollTop: '621'
-        }, 2000);}
-    if (wScroll >= 621 && wScroll <1391){
-      $('html, body').animate({
-          scrollTop: '1391'
-      }, 2000);}
-    if (wScroll >= 1391 && wScroll <2161) {
-      $('html, body').animate({
-          scrollTop: '2161'
-      }, 2000);}
-    if (wScroll >= 2161 && wScroll <2931) {
-      $('html, body').animate({
-          scrollTop: '2931'
-      }, 2000);}
-    if (wScroll >= 2931 && wScroll <3701) {
-      $('html, body').animate({
-          scrollTop: '3701'
-      }, 2000);}
-    if (wScroll >= 3701 && wScroll <4471) {
-      $('html, body').animate({
-         scrollTop: '4471'
-      }, 2000);}
-    if (wScroll >= 4471 && wScroll <5221) {
-      $('html, body').animate({
-        scrollTop: '5221'
-      }, 2000);}
-    if (wScroll >= 5221 && wScroll <5991){
-      $('html, body').animate({
-         scrollTop: '5991'
-      }, 2000);}
-    if (wScroll >= 5991 && wScroll <6741){
-      $('html, body').animate({
-          scrollTop: '6741'
-    }, 2000);}
-  });*/
-
   $(".prev").click(function(e){
     e.preventDefault();
-    var wScroll = $(window).scrollTop();
-    if (wScroll >= 621 && wScroll <1391){
-      $('html, body').animate({
-          scrollTop: '0'
-      }, 2000);}
-    if (wScroll >= 1391 && wScroll <2161) {
-      $('html, body').animate({
-          scrollTop: '621'
-      }, 3000);}
-    if (wScroll >= 2161 && wScroll <2931) {
-      $('html, body').animate({
-          scrollTop: '1391'
-      }, 3000);}
-    if (wScroll >= 2931 && wScroll <3701) {
-      $('html, body').animate({
-          scrollTop: '2161'
-      }, 2000);}
-    if (wScroll >= 3701 && wScroll <4471) {
-      $('html, body').animate({
-         scrollTop: '2931'
-      }, 2000);}
-    if (wScroll >= 4471 && wScroll <5221) {
-      $('html, body').animate({
-        scrollTop: '3701'
-      }, 2000);}
-    if (wScroll >= 5221 && wScroll <5991){
-      $('html, body').animate({
-         scrollTop: '4471'
-      }, 2000);}
-    if (wScroll >= 5991 && wScroll <6741){
-      $('html, body').animate({
-          scrollTop: '5221'
-    }, 2000);}
-    if (wScroll >= 6741){
-      $('html, body').animate({
-          scrollTop: '5991'
-        }, 2000);}
+
+    let s = getSlideStructure();
+
+    for(let slideIndex = s.totalSlides - 1; slideIndex >= 0; slideIndex--){
+      let slide = s.slideList[slideIndex];
+      let slideOffsetTop = slide.offsetTop;
+
+      if(s.windowCurrentScrollPosition > slideOffsetTop){
+        $('html, body').animate({
+            scrollTop: slideOffsetTop
+          }, 2000);
+        break;
+      }
+    }
     });
 
-
-
-  /**$(".next").click(function(e){
-    e.preventDefault();
-    $('html, body').animate({
-            scrollTop: '+=580'
-        }, 2000);
-    });
-  $(".prev").click(function(e){
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: '-=580'
-    }, 2000);
-  }); **/
 });
