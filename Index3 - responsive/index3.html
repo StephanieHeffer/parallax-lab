@@ -7,27 +7,55 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
     <link rel="icon" type="image/png" href="http://2.bp.blogspot.com/-2z2ZGbyITMA/ViKvZAM6qrI/AAAAAAAAGIg/-MoMHQhEtJY/s1600/Fitinha%2Bpink%2Bc%25C3%25A2ncer%2Bde%2Bmama%2Boutubro%2Brosa%2B1%2B-%2Bcria%25C3%25A7%25C3%25A3o%2BBlog%2BPNG-Free.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="./js/jquery-2.1.3.min.js"></script>
     <script src="./js/functions.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/responsive.js"></script>
   </head>
-  <body>
-    <header>
-      <h2 align="center"><a href="#" title="Outubro Rosa" style="text-decoration:none">Outubro Rosa</a></h2>
-      <nav>
-        <ul class="l2">
-        <li><a href="http://drauziovarella.com.br" style="text-decoration:none" target="_blank" title="Drauzio"><h2 align="left">Drauzio</h2></a></li>
+   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header align="center" style="
+     padding-top: 30px;
+     padding-bottom: 15px;
+     padding-left: 7px;
+     padding-right: 5px;
+     height: 99px;
+     ">
+     <h2>
+      <a href="#" title="Outubro Rosa" style="text-decoration:none">Outubro Rosa</a>
+     </h2>
+     <nav>
+        <ul>
+        <li>
+          <a href="http://drauziovarella.com.br" target="_blank">
+          <img src="http://drauziovarella.com.br/wp-content/themes/drauzio_2015/images/logo.png" align= "left" height="80px" alt="Dr. Drauzio Varella">
+        </a>
+        </li>
         </ul>
       </nav>
+     <section id="buttons">
+        <a href="#" class="prev">&laquo;</a>
+        <a href="#" class="next">&raquo;</a>
+      </section>
     </header>
-    <header class="mulher">
+    <header class="cel" id="cel"></header>
+    <header class="mulher hide-mobile">
       <div class="logoOutubro"></div>
       <div class="laco"></div>
     </header>
-    <section class="content">
+    <section id="contente" class="content">
       <div id="slide2" class="bgParallax" data-speed="15">
-        <video autoplay="true" loop="" muted class="wrap-video1" >
+        <video autoplay="true" loop="" muted class="wrap-video1 videoback" >
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.mp4" type="video/mp4">
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.webm" type="video/webm">
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.ogv" type="video/ogv">
@@ -47,7 +75,7 @@
         </article>
       </div>
       <div id="slide5" class="bgParallax" data-speed="15">
-        <video loop="" class="wrap-video2" id="video2">
+        <video loop="" class="wrap-video2 videoback" id="video2">
           <source src="Alight.mp4" type="video/mp4">
           <source src="Alight.webm" type="video/webm">
         </video>
@@ -60,7 +88,7 @@
           <p>Forma-se um círculo vicioso: o tabu em relação ao corpo feminino que dificulta qualquer discussão relacionada ao tema. E muitas que superam o tabu e desejam fazer o exame não têm acesso (principalmente no interior).</p>
         </article>
       </div>
-      <div id="slide7" class="bgParallax" data-speed="15">
+      <div id="slide7" class="bgParallax mobile-colapse" data-speed="15">
         <article>
           <p style="color:#585858;">XXXXX das mulheres brasileiras acessam redes sociais diariamente. Poderia ser um ambiente de discussão aberta, mas...</p>
           <br>
@@ -80,11 +108,11 @@
       </div>
       <div id="slide8" class="bgParallax" data-speed="15">
         <article>
-          <iframe width="640" height="360" src="https://www.youtube.com/embed/a1-EQmyaKT4" frameborder="0" allowfullscreen></iframe>
+          <iframe class="videoresp" width="640" height="360" src="https://www.youtube.com/embed/a1-EQmyaKT4" frameborder="0" allowfullscreen></iframe>
         </article>
       </div>
       <div id="slide9" class="bgParallax" data-speed="15">
-        <video autoplay="true" loop="" muted class="wrap-video1" >
+        <video autoplay="true" loop="" muted class="wrap-video1 videoback" >
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.mp4" type="video/mp4">
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.webm" type="video/webm">
           <source src="http://stc.uol.com/c/tab/maes-infratoras/capa.ogv" type="video/ogv">
@@ -93,11 +121,28 @@
           <h1 style="z-index: 3; position: relative; color:#FFFFFF;">Lorem ipsum dolor sit amet</h1>
         </article>
       </div>
-      <div id="slide10" class="bgParallax" data-speed="15" align="center">
-        <a href="https://www.facebook.com/drauziovarella" target="_blank"><img src="facebook.png" height="50px"></a>   <a href="https://twitter.com/drauziovarella" target="_blank"><img src="twitter.png" height="50px"></a>  <a href="https://www.instagram.com/sitedrauziovarella/" target="_blank"><img src="instagram.png" height="50px"></a>
+      <div id="slide10" class="bgParallax" data-speed="15">
+        <article align="center">
+        <a href="https://www.facebook.com/drauziovarella" target="_blank">
+          <img src="facebook.png" height="40px"></a>
+        <a href="https://twitter.com/drauziovarella" target="_blank">
+          <img src="twitter.png" height="40px"></a>
+        <a href="https://www.instagram.com/sitedrauziovarella/" target="_blank">
+          <img src="instagram.png" height="40px"></a>
+        </article>
+          <!--COMPARTILHAR FACEBOOK-->
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fthebestmotherfuckingwebsite.co%2F&layout=button&mobile_iframe=true&width=97&height=20&appId"
+          width="97" height="20" style="border:none;overflow:hidden"
+          scrolling="no" frameborder="0" allowTransparency="true" align="right">
+          </iframe>
+        <!--<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FDrauzio-Varella%2F521093161261878&layout=button&mobile_iframe=true&width=97&height=20&appId"
+        width="97" height="20" style="border:none;overflow:hidden"
+        scrolling="no" frameborder="0" allowTransparency="true">
+      </iframe> -->
       </div>
     </section>
-<footer>
+
+   <footer>
 	    <ul>
 		   <li>
 			  <p class="home">Direção</p>
@@ -157,7 +202,7 @@
 </footer>
 <!--
 FOOTER CELULAR
-<footer class="special-footer tab-tpl" initiated="true">
+<footer class="celfooter">
   <div class="container wrap-footer">
     <div class="row">
       <div class="col-xs-8 col-sm-6 col-md-4">
@@ -208,5 +253,5 @@ FOOTER CELULAR
     </div>
   </div>
 </footer> -->
-</body>
+  </body>
 </html>
