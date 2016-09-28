@@ -24,7 +24,7 @@ $(window).scroll(function() {
 
       var video = document.getElementById('video2');
       var startVideoScrollPosition = 2809;
-      var stopVideoScrollPosition = 3289;
+      var stopVideoScrollPosition = 3209;
 
       if (wScroll <= stopVideoScrollPosition &&
           wScroll >= startVideoScrollPosition) {
