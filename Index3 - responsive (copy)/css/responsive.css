@@ -1,8 +1,8 @@
-div.pics{
+div.pics img{
+  width: 70%;
+  height: auto;
   margin: 0;
-  width: 47%;
-  clear: both;
-  float: none;
+
 }
 
 div.mobile-colapse{
@@ -49,14 +49,18 @@ footer{
 }
 
 
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
 }
+
 
 /* Portrait */
 @media only screen
@@ -64,6 +68,7 @@ footer{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
 }
 
 /* Landscape */
@@ -91,6 +96,7 @@ footer{
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
 }
 
 /* Landscape */

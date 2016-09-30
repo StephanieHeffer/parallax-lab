@@ -6,6 +6,24 @@ $(function(){
     $("section#buttons").fadeOut();
   });
 
+
+
+//keyboard
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37: ; //left
+        case 38: //up
+            $(".prev").click();
+            break;
+        case 39: ; //right
+        case 40: //down
+            $(".next").click();
+            break;
+    }
+};
+
+
+
 //Slide
   function getSlideStructure(){
     let scrollPosition = $(window).scrollTop();

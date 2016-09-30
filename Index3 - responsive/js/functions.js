@@ -1,3 +1,4 @@
+
 var pContainerHeight = $('.mulher').height();
 
 $(window).scroll(function() {
@@ -22,7 +23,7 @@ $(window).scroll(function() {
 
 		  }
 
-      var video = document.getElementById('video2');
+			var video = document.getElementById('video2');
       var startVideoScrollPosition = 2809;
       var stopVideoScrollPosition = 3209;
 
@@ -33,7 +34,6 @@ $(window).scroll(function() {
       else {
           video.pause();
       }
-
 });
 
 
