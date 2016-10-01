@@ -23,9 +23,22 @@ $(window).scroll(function() {
 
 		  }
 
-			var video = document.getElementById('video2');
-      var startVideoScrollPosition = 2809;
-      var stopVideoScrollPosition = 3209;
+			let video = document.getElementById('video2');
+
+			let topoSlide5 = $('#slide5')[0].offsetTop;
+
+			if ((wScroll > topoSlide5 - 50) && (wScroll < topoSlide5 + 50) ){
+				video.play();
+			}
+
+			else {
+				video.pause();
+			}
+
+
+			/*
+			let startVideoScrollPosition = 2809;
+      let stopVideoScrollPosition = 3209;
 
       if (wScroll <= stopVideoScrollPosition &&
           wScroll >= startVideoScrollPosition) {
@@ -33,7 +46,7 @@ $(window).scroll(function() {
       }
       else {
           video.pause();
-      }
+      } */
 });
 
 

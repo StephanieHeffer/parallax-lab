@@ -6,23 +6,43 @@ $(function(){
     $("section#buttons").fadeOut();
   });
 
+//mouse
+let onmousewheelIsExecuting = false;
 
+document.onmousewheel = function(e){
+
+  if (onmousewheelIsExecuting == true){
+    return;
+  }
+
+  onmousewheelIsExecuting = true;
+
+ if ((e.wheelDelta < 0) || (e.detail < 0)){
+      $(".next").click();
+    }
+ else{
+    $(".prev").click();
+ }
+
+ window.setTimeout(function(){
+   onmousewheelIsExecuting = false;
+ }, 2000);
+
+};
 
 //keyboard
 document.onkeydown = function(e) {
     switch (e.keyCode) {
-        case 37: ; //left
+        case 37: ;//left
         case 38: //up
             $(".prev").click();
             break;
-        case 39: ; //right
+        case 39: ;//right
         case 40: //down
             $(".next").click();
             break;
     }
 };
-
-
 
 //Slide
   function getSlideStructure(){
@@ -50,7 +70,7 @@ document.onkeydown = function(e) {
       if(s.windowCurrentScrollPosition < slideOffsetTop){
         $('html, body').animate({
             scrollTop: slideOffsetTop
-          }, 2000);
+          }, 1500);
         break;
       }
     }
@@ -68,10 +88,11 @@ document.onkeydown = function(e) {
       if(s.windowCurrentScrollPosition > slideOffsetTop){
         $('html, body').animate({
             scrollTop: slideOffsetTop
-          }, 2000);
+          }, 1500);
         break;
       }
     }
     });
+
 
 });
