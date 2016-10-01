@@ -1,8 +1,12 @@
+body{
+  color: #8B0000;
+}
+
 div.pics img{
   width: 70%;
   height: auto;
   margin: 0;
-
+  float: left;
 }
 
 div.mobile-colapse{
@@ -21,7 +25,7 @@ div.mobile-colapse{
     height:600px;
     background-image: url("../backcel.jpg");
     backgound-size: auto ;
-    background-position: top center;
+    background-position: center center;
     background-attachment: fixed;
     overflow: hidden;
     min-width: 100%;
@@ -58,7 +62,6 @@ footer{
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
 }
 
 
