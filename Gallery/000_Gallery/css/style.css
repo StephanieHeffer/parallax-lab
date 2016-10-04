@@ -1,0 +1,13 @@
+
+.imgStyle{
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ccc;
+  float: left;
+  display: inline;
+}
+
+    .main-image {
+      width: 380px;
+      margin-bottom: 0.75em;
+    }

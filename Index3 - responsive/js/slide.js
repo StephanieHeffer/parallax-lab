@@ -33,10 +33,12 @@ document.onmousewheel = function(e){
 //keyboard
 document.onkeydown = function(e) {
     switch (e.keyCode) {
+        case 33: ;//pageUp
         case 37: ;//left
         case 38: //up
             $(".prev").click();
             break;
+        case 34: ;//pageDown
         case 39: ;//right
         case 40: //down
             $(".next").click();

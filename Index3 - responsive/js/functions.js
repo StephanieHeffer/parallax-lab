@@ -35,19 +35,4 @@ $(window).scroll(function() {
 				video.pause();
 			}
 
-
-			/*
-			let startVideoScrollPosition = 2809;
-      let stopVideoScrollPosition = 3209;
-
-      if (wScroll <= stopVideoScrollPosition &&
-          wScroll >= startVideoScrollPosition) {
-          video.play();
-      }
-      else {
-          video.pause();
-      } */
 });
-
-
-//$('footer').footerReveal({ shadow: false, zIndex: -101 });

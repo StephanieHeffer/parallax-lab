@@ -1,21 +1,14 @@
-function resizeSlides(){
+$(document).ready(function() {
+
   let heightSlide = window.innerHeight;
-  let slide2 = $('#slide3')[0];
+  let slideStyle = $('#slide3')[0].style;
 
-  $(window).resize(function(){
-    heightSlide = window.innerHeight;
-    widthSlide = $('.bgParallax').innerWidth;
+    slideStyle.height = heightSlide + 'px';
 
+    $(window).resize(function(){
+      heightSlide = window.innerHeight;
+      slideStyle.height = heightSlide + 'px';
 
-
-};
-
-/*
-let heightSlide;
-let widthSlide;
-
-$(window).resize(function(){
-  heightSlide = $('.bgParallax').innerHeight;
-  widthSlide = $('.bgParallax').innerWidth;
 });
-*/
+
+});
