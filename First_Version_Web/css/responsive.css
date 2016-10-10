@@ -19,30 +19,14 @@ div.mobile-colapse{
 .cel{
     display: block;
     position: relative;
-    height:600px;
     background-image: url("../backcel.jpg");
     backgound-size: auto ;
     background-position: center center;
     background-attachment: fixed;
     overflow: hidden;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
 }
-.videoresp{
-  max-width: 100%;
-  height: auto;
-}
 
-.videoback{
-  display: inline-block;
-  min-width: 100%;
-  height: auto;
-  background-size: cover;
-  min-height: 100%;
-  position: relative;
-
-}
 .preview img {
 	border: 4px solid #444;
 	padding: 1px;
