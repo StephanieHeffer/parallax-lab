@@ -1,53 +1,45 @@
-
 var pContainerHeight = $('.mulher').height();
 
 $(window).scroll(function() {
-		var wScroll = $(this).scrollTop();
-		if (wScroll <= 371) {
-			$('.logoOutubro').css({
-				'transform': 'translate(0px, '+wScroll /2 +'%)'
-			});
+    var wScroll = $(this).scrollTop();
+    if (wScroll <= 371) {
+        $('.logoOutubro').css({
+            'transform': 'translate(0px, ' + wScroll / 2 + '%)'
+        });
 
-			$('.laco').css({
-				'transform': 'translate(0px, -'+ wScroll /3.5 +'%)'
-			});
-		}
-		if(wScroll > $('.pics').offset().top - ($(window).height() / 1.2)) {
+        $('.laco').css({
+            'transform': 'translate(0px, -' + wScroll / 3.5 + '%)'
+        });
+    }
 
-		    $('.pics figure').each(function(i){
+    let video = document.getElementById('video2');
 
-		      setTimeout(function(){
-		        $('.pics figure').eq(i).addClass('is-showing');
-		      }, (700 * (Math.exp(i * 0.14))) - 700);
-		    });
+    let topoSlide14 = $('#slide14')[0].offsetTop;
 
-		  }
+    if ((wScroll > topoSlide14 - 50) && (wScroll < topoSlide14 + 50)) {
+        video.play();
+    } else {
+        video.pause();
+    }
 
-			let video = document.getElementById('video2');
+    let video5 = document.getElementById('video1');
 
-			let topoSlide14 = $('#slide14')[0].offsetTop;
+    let topoSlide5 = $('#slide5')[0].offsetTop;
 
-			if ((wScroll > topoSlide14 - 50) && (wScroll < topoSlide14 + 50) ){
-				video.play();
-			}
+    if ((wScroll > topoSlide5 - 50) && (wScroll < topoSlide5 + 50)) {
+        video5.play();
+    } else {
+        video5.pause();
+    }
 
-			else {
-				video.pause();
-			}
+    let video11 = document.getElementById('video3');
 
+    let topoSlide11 = $('#slide11')[0].offsetTop;
 
-			/*
-			let startVideoScrollPosition = 2809;
-      let stopVideoScrollPosition = 3209;
+    if ((wScroll > topoSlide11 - 50) && (wScroll < topoSlide11 + 50)) {
+        video11.play();
+    } else {
+        video11.pause();
+    }
 
-      if (wScroll <= stopVideoScrollPosition &&
-          wScroll >= startVideoScrollPosition) {
-          video.play();
-      }
-      else {
-          video.pause();
-      } */
 });
-
-
-//$('footer').footerReveal({ shadow: false, zIndex: -101 });

@@ -6,14 +6,14 @@ html {
 * {margin:0; padding: 0;}
 html{height:100%;}
 body{
-  color: #5e5b64;
+  color: #373638;
 	position:relative;
   overflow: hidden;
 }
 h1.rfExample {
         font-family: "Bebas Neue", Arial;
         font-size: 30px;
-        color: #5e5b64;
+        color: #373638;
       }
 h1{
   text-align: center;
@@ -135,6 +135,10 @@ section#buttons a:hover{
   background: #555;
 }
 
+.slidepadding{
+  padding-top: 70px;
+}
+
 .bgParallax {
 	margin: 0 auto;
 	width: auto;
@@ -226,269 +230,66 @@ div.pics img{
   display: inline-block;
 }
 
-  #slide2 {
-    background: url(../images/2-mamilospolemicos.jpg) 50% 0 no-repeat fixed;
-      background-image: url("../images/2-mamilospolemicos.jpg");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide3 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 120px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide4 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 120px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide5 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide6 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide7 {
-    background: url(../images/7-mulher-janela-Depositphotos_41329389_original.jpg) 50% 0 no-repeat fixed;
-      background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide8 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide9 {
-    background: url(../images2/test1.png) 50% 0 no-repeat fixed;
-      background-image: url("../images2/test1.png");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide10 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-    background-position-x: 50%;
-    background-position-y: 0px;
-    background-size: cover;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    height: 600px;
-    padding: 170px 0 0 0;
-    background-size: cover;
-    overflow: hidden;
-  }
-  #slide11 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide12 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide13 {
-    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL) 50% 0 no-repeat fixed;
-      background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
-      background-position-x: 50%;
-      background-position-y: 0px;
-      background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: fixed;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: initial;
-      height: 600px;
-      padding: 170px 0 0 0;
-      background-size: cover;
-      overflow: hidden;
-  }
-  #slide14 {
-    background-position-x: 50%;
-    background-position-y: 0px;
-    background-size: cover;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: #FFFFFF;
-    height: 600px;
-    padding: 170px 0 0 0;
-    background-size: cover;
-    overflow: hidden;
-  }
-#slide15 {
-  background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg) 50% 0 no-repeat fixed;
-    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg");
-    background-position-x: 50%;
-    background-position-y: 0px;
-    background-size: cover;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    height: 70px;
-    padding: 10px 0 0 0;
-    background-size: cover;
-    overflow: hidden;
+.fullSizeSlide{
+
 }
 
-.wrap-video1{
-  position:absolute;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  margin-top: -170px;
+.slideBackground{
+  background-position-x: 50%;
+  background-position-y: 0px;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: cover;
+  overflow: hidden;
 }
-.wrap-video2{
-  position:absolute;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  margin-top: -170px;
+  #slide2 {
+    background-image: url("../images/2-mamilospolemicos.jpg");
+  }
+  #slide3 {
+    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+  }
+  #slide4 {
+    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+  }
+  #slide6 {
+    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+  }
+  #slide7 {
+    background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
+  }
+  #slide8 {
+    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+  }
+  #slide9 {
+    background-image: url("../images2/test3.png");
+  }
+  #slide10 {
+    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+  }
+  #slide12 {
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
+  }
+  #slide13 {
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
+  }
+ #slide15 {
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg");
+  height: 70px;
+  padding: 10px 0 0 0;
 }
-.wrap-video3{
+
+.fullslide-video{
   position:absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: 0;
-  margin-top: -170px;
 }
 
 .bgParallax article {
@@ -506,44 +307,6 @@ div.pics img{
     box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
     transform-style: inherit;
 }
-.pics {
-  margin-bottom: 100px; }
-  .pics figure {
-    float: left;
-    margin-right: 5px;
-    opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-    cursor: pointer;}
-    .pics img{
-      max-width: 100%;
-      height: 40%;
-      width: 40%;
-      float: left;
-      margin-right: 3px;
-    }
-    .pics figure.is-showing {
-      opacity: 1;
-      transform: translateX(0px); }
-    .pics figure img {
-      float: left;
-      display: inline-block;
-      transform: scale(1);
-      transition: all 0.3s ease-in-out; }
-    .pics figure:hover figcaption {
-      left: 0%; }
-    .pics figure:hover img {
-      transform: scale(1.1); }
-  .pics figcaption {
-    position: absolute;
-    bottom: 10px;
-    left: -100%;
-    background: black;
-    color: white;
-    padding: 2px 8px;
-    font-size: 11px;
-    transition: all 0.3s ease-in-out; }
 
 .cel{
   display: none;
