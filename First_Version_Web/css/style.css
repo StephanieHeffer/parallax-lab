@@ -157,32 +157,11 @@ section#buttons a:hover{
 .mulher{
   position: relative;
   height:600px;
-  background-image: url("../background3.jpg");
+  background-image: url("../images/SLIDE_01.jpg");
   backgound-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
   overflow: hidden;
-}
-.logoOutubro{
-  height: 120px;
-  width: 90%;
-  background-image: url("../logo-campanha.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-}
-.laco{
-  width: 100%;
-  height: 161px;
-  background-image: url("../laco.png");
-  background-repeat: no-repeat;
-  position: right bottom;
-  position: absolute;
-  left: 40%;
-  margin-left: -480px;
-  top: 600px;
 }
 
 .thumbnails img {
@@ -248,34 +227,34 @@ div.pics img{
   overflow: hidden;
 }
   #slide2 {
-    background-image: url("../images/2-mamilospolemicos.jpg");
+    background-image: url("../images/SLIDE_02.jpg");
   }
   #slide3 {
-    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+    background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide4 {
-    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+    background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide6 {
-    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+    background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide7 {
     background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
   }
   #slide8 {
-    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+    background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide9 {
-    background-image: url("../images2/test3.png");
+    background-image: url("../images/SLIDE_09.jpg");
   }
   #slide10 {
-    background-image: url("../images/6-textura1-Apostrophe2.jpg");
+    background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide12 {
     background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
   }
   #slide13 {
-    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
+    background-image: url("../images/SLIDE_13.jpg");
   }
  #slide15 {
   background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg");

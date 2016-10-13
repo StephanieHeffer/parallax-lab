@@ -2,15 +2,6 @@ var pContainerHeight = $('.mulher').height();
 
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
-    if (wScroll <= 371) {
-        $('.logoOutubro').css({
-            'transform': 'translate(0px, ' + wScroll / 2 + '%)'
-        });
-
-        $('.laco').css({
-            'transform': 'translate(0px, -' + wScroll / 3.5 + '%)'
-        });
-    }
 
     let video = document.getElementById('video2');
 
@@ -40,6 +31,16 @@ $(window).scroll(function() {
         video11.play();
     } else {
         video11.pause();
+    }
+
+    let video12 = document.getElementById('video12');
+
+    let topoSlide12 = $('#slide12')[0].offsetTop;
+
+    if ((wScroll > topoSlide12 - 50) && (wScroll < topoSlide12 + 50)) {
+        video12.play();
+    } else {
+        video12.pause();
     }
 
 });
