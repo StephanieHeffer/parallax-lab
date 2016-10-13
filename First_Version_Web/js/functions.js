@@ -1,5 +1,3 @@
-var pContainerHeight = $('.mulher').height();
-
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
