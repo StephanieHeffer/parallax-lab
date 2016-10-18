@@ -309,6 +309,23 @@ h3{
   overflow: hidden;
 }
 #slide10 {
+  background: url(../SLIDE_02.jpg) 50% 0 no-repeat fixed;
+  background-image: url("../SLIDE_02.jpg");
+  background-position-x: 50%;
+  background-position-y: 0px;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  padding: 0 0 0 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#slide11 {
   background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg) 50% 0 no-repeat fixed;
     background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg");
     background-position-x: 50%;

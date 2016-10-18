@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Outubro Rosa</title>
+    <style type="text/css">
+    #container{
+      height: 450px;
+      width: 650px;
+      margin: 20px auto;
+      position: relative;
+    }
+    #img{
+      height: 450px;
+      width: 650px;
+      position: absolute;
+    }
+    #left_holder{
+      height: 450px;
+      width: 100px;
+      position: absolute;
+      left: 0px;
+      top:0px;
+    }
+    #right_holder{
+      height: 450px;
+      width: 100px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .left{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 40%;
+      left: 0px;
+    }
+    .right{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 40%;
+      right: 0px;
+    }
+    </style>
+    <script type="text/javascript">
+      let imagecount = 1;
+      let total = 5;
+
+      function slidegallery(x){
+        let image = document.getElementById('img');
+        imagecount = imagecount + x;
+        if(imagecount > total){ imagecount = 1;}
+        if(imagecount < 1){imagecount = total;}
+        image.src = "images/imagem"+ imagecount+ ".jpg";
+      }
+    window.setInterval(function slidegalleryA(){
+      let image = document.getElementById('img');
+      imagecount = imagecount + 1;
+      if(imagecount > total){ imagecount = 1;}
+      if(imagecount < 1){imagecount = total;}
+      image.src = "images/imagem"+ imagecount+ ".jpg";
+    }, 5000);
+    </script>
+</head>
+<body onload="slidegalleryA()">
+  <div id="container">
+    <img src="images/imagem1.jpg" id="img"/>
+    <div id="left_holder">
+      <img src="images/esquerda.png" onClick="slidegallery(-1)" class="left"/>
+    </div>
+    <div id="right_holder">
+      <img src="images/direita.png" onClick="slidegallery(1)" class="right" />
+    </div>
+  </div>
+
+</body>
+</html>

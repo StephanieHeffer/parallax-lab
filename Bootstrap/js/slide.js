@@ -32,7 +32,6 @@ $(function() {
     //keyboard
     document.onkeydown = function(e) {
         switch (e.keyCode) {
-            case 36: $("#subir").click(); break;
             case 33:
                 ; //pageUp
             case 37:
@@ -49,11 +48,6 @@ $(function() {
                 break;
         }
     };
-
-       $('#subir').click(function(e){
-          $('html, body').animate({scrollTop:0}, 1500);
-      return false;
-    });
 
     //Slide
     function getSlideStructure() {

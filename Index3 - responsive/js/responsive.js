@@ -158,3 +158,21 @@ $(document).ready(function() {
 });
 
 });
+$(document).ready(function() {
+
+  let heightSlide = window.innerHeight;
+  let widthtSlide = window.innerWidth;
+  let slideStyle = $('#slide10')[0].style;
+
+    slideStyle.height = heightSlide + 'px';
+    slideStyle.width = widthSlide + 'px';
+
+    $(window).resize(function(){
+      heightSlide = window.innerHeight;
+      widthtSlide = window.innerWidth;
+      slideStyle.height = heightSlide + 'px';
+      slideStyle.width = widthtSlide + 'px';
+
+});
+
+});
