@@ -6,15 +6,18 @@ html {
 * {margin:0; padding: 0;}
 html{height:100%;}
 body{
-  color: #373638;
+  color: white;
 	position:relative;
   overflow: hidden;
 }
-h1.rfExample {
-        font-family: "Bebas Neue", Arial;
+@font-face{
+  font-family: 'BebasNeueRegular';
+  src: url('../fonts/BebasNeue_Regular.ttf') format('truetype');
+}
+p.rfExample {
+        font-family:'BebasNeueRegular';
         font-size: 30px;
-        color: #373638;
-      }
+  }
 h1{
   text-align: center;
 }
@@ -75,9 +78,9 @@ section#buttons a:hover{
 .mulher{
   position: relative;
   min-width: 100%;
-  background-image: url("../images/SLIDE_01.jpg");
+  background-image: url("../images/SLIDE_001.jpg");
   overflow: hidden;
-  background: url(../images/SLIDE_01.jpg) no-repeat center center fixed;
+  background: url(../images/SLIDE_001.jpg) no-repeat center center fixed;
    -webkit-background-size: 100% auto;
    -moz-background-size: 100% auto;
    -ms-background-size: 100% auto;
@@ -153,7 +156,7 @@ div.pics img{
   overflow: hidden;
 }
   #slide2 {
-    background-image: url("../images/SLIDE_02.jpg");
+    background-image: url("../images/SLIDE_002.jpg");
   }
   #slide3 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
@@ -162,16 +165,16 @@ div.pics img{
     background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide6 {
-    background-image: url("../images/6-textura1-Apostrophe.jpg");
+    background-image: url("../images/SLIDE_006.jpg");
   }
   #slide7 {
     background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
   }
   #slide8 {
-    background-image: url("../images/6-textura1-Apostrophe.jpg");
+    background-image: url("../images/SLIDE_008.jpg");
   }
   #slide9 {
-    background-image: url("../images/SLIDE_09.jpg");
+    background-image: url("../images/SLIDE_009.jpg");
   }
   #slide10 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
@@ -180,7 +183,7 @@ div.pics img{
     background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
   }
   #slide13 {
-    background-image: url("../images/SLIDE_13.jpg");
+    background-image: url("../images/SLIDE_013.jpg");
   }
  #slide15 {
   background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn0xxsMbHYND_PFtyO1n9K5Nja-kMTd7CvL8uf1l5M2OdoaZIjtg");

@@ -10,33 +10,33 @@
       margin: 20px auto;
       position: relative;
     }
-    #img{
+    #imgGalMen{
       height: 450px;
       width: 650px;
       position: absolute;
     }
-    #left_holder{
+    #left_holderMen{
       height: 450px;
       width: 100px;
       position: absolute;
       left: 0px;
       top:0px;
     }
-    #right_holder{
+    #right_holderMen{
       height: 450px;
       width: 100px;
       position: absolute;
       right: 0px;
       top: 0px;
     }
-    .left{
+    .leftmen{
       height: 50px;
       width: 50px;
       position: absolute;
       top: 40%;
       left: 0px;
     }
-    .right{
+    .rightmen{
       height: 50px;
       width: 50px;
       position: absolute;
@@ -45,33 +45,33 @@
     }
     </style>
     <script type="text/javascript">
-      let imagecount = 1;
-      let total = 5;
+      let imagecountmen = 1;
+      let totalmen = 5;
 
-      function slidegallery(x){
-        let image = document.getElementById('img');
-        imagecount = imagecount + x;
-        if(imagecount > total){ imagecount = 1;}
-        if(imagecount < 1){imagecount = total;}
-        image.src = "images/imagem"+ imagecount+ ".jpg";
+      function slidegalleryMen(x){
+        let imagemen = document.getElementById('imgGalMen');
+        imagecountmen = imagecountmen + x;
+        if(imagecountmen > totalmen){ imagecountmen = 1;}
+        if(imagecountmen < 1){imagecountmen = totalmen;}
+        imagemen.src = "images/imagem"+ imagecountmen + ".jpg";
       }
-    window.setInterval(function slidegalleryA(){
-      let image = document.getElementById('img');
-      imagecount = imagecount + 1;
-      if(imagecount > total){ imagecount = 1;}
-      if(imagecount < 1){imagecount = total;}
-      image.src = "images/imagem"+ imagecount+ ".jpg";
-    }, 5000);
+    window.setInterval(function slidegalleryAmen(){
+      let imagemen = document.getElementById('imgGalMen');
+      imagecountmen = imagecountmen + 1;
+      if(imagecountmen > totalmen){ imagecountmen = 1;}
+      if(imagecountmen < 1){imagecountmen = totalmen;}
+      imagemen.src = "images/imagem"+ imagecountmen + ".jpg";
+    }, 3000);
     </script>
 </head>
-<body onload="slidegalleryA()">
+<body onload="slidegalleryAmen()">
   <div id="container">
-    <img src="images/imagem1.jpg" id="img"/>
-    <div id="left_holder">
-      <img src="images/esquerda.png" onClick="slidegallery(-1)" class="left"/>
+    <img src="images/imagem1.jpg" id="imgGalMen"/>
+    <div id="left_holderMen">
+      <img src="images/esquerda.png" onClick="slidegalleryMen(-1)" class="leftmen"/>
     </div>
-    <div id="right_holder">
-      <img src="images/direita.png" onClick="slidegallery(1)" class="right" />
+    <div id="right_holderMen">
+      <img src="images/direita.png" onClick="slidegalleryMen(1)" class="rightmen" />
     </div>
   </div>
 
