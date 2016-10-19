@@ -17,6 +17,8 @@ body{
 p.rfExample {
         font-family:'BebasNeueRegular';
         font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1.5px 1.5px 0.5px #888888;
   }
 h1{
   text-align: center;
@@ -49,7 +51,7 @@ section#buttons a{
   z-index: 10;
 }
 section#buttons a:hover{
-  background: #555;
+  background: #d3767e;
 }
 
 .slidepadding{
@@ -126,9 +128,8 @@ section#buttons a:hover{
 	width: auto;
 }
 
-gf{
-  background: #e6e600;
-  color: #000;
+#galleryMobile{
+  display: none;
 }
 
 div.pics img{
@@ -178,9 +179,6 @@ div.pics img{
   }
   #slide10 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
-  }
-  #slide12 {
-    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROGtoceOYja4i1LabHyQLh0bVXqXesAZMXrNb8ktdbTkbnxdpL");
   }
   #slide13 {
     background-image: url("../images/SLIDE_013.jpg");

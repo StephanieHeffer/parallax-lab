@@ -10,33 +10,33 @@
       margin: 20px auto;
       position: relative;
     }
-    #imgGalMen{
+    #imgGalFem{
       height: 450px;
       width: 650px;
       position: absolute;
     }
-    #left_holderMen{
+    #left_holderFem{
       height: 450px;
       width: 100px;
       position: absolute;
       left: 0px;
       top:0px;
     }
-    #right_holderMen{
+    #right_holderFem{
       height: 450px;
       width: 100px;
       position: absolute;
       right: 0px;
       top: 0px;
     }
-    .leftmen{
+    .leftfem{
       height: 50px;
       width: 50px;
       position: absolute;
       top: 40%;
       left: 0px;
     }
-    .rightmen{
+    .rightfem{
       height: 50px;
       width: 50px;
       position: absolute;
@@ -45,33 +45,33 @@
     }
     </style>
     <script type="text/javascript">
-      let imagecountmen = 1;
-      let totalmen = 5;
+      let imagecountfem = 1;
+      let totalfem = 5;
 
-      function slidegalleryMen(x){
-        let imagemen = document.getElementById('imgGalMen');
-        imagecountmen = imagecountmen + x;
-        if(imagecountmen > totalmen){ imagecountmen = 1;}
-        if(imagecountmen < 1){imagecountmen = totalmen;}
-        imagemen.src = "images/imagem"+ imagecountmen + ".jpg";
+      function slidegalleryFem(x){
+        let imagefem = document.getElementById('imgGalFem');
+        imagecountfem = imagecountfem + x;
+        if(imagecountfem > totalfem){ imagecountfem = 1;}
+        if(imagecountfem < 1){imagecountfem = totalfem;}
+        imagefem.src = "images/img"+ imagecountfem + ".jpg";
       }
-    window.setInterval(function slidegalleryAmen(){
-      let imagemen = document.getElementById('imgGalMen');
-      imagecountmen = imagecountmen + 1;
-      if(imagecountmen > totalmen){ imagecountmen = 1;}
-      if(imagecountmen < 1){imagecountmen = totalmen;}
-      imagemen.src = "images/imagem"+ imagecountmen + ".jpg";
+    window.setInterval(function slidegalleryAfem(){
+      let imagefem = document.getElementById('imgGalFem');
+      imagecountfem = imagecountfem + 1;
+      if(imagecountfem > totalfem){ imagecountfem = 1;}
+      if(imagecountfem < 1){imagecountfem = totalfem;}
+      imagefem.src = "images/img"+ imagecountfem + ".jpg";
     }, 3000);
     </script>
 </head>
-<body onload="slidegalleryAmen()">
+<body onload="slidegalleryAfem()">
   <div id="container">
-    <img src="images/imagem1.jpg" id="imgGalMen"/>
-    <div id="left_holderMen">
-      <img src="images/esquerda.png" onClick="slidegalleryMen(-1)" class="leftmen"/>
+    <img src="images/img1.jpg" id="imgGalFem"/>
+    <div id="left_holderFem">
+      <img src="images/esquerda.png" onClick="slidegalleryFem(-1)" class="leftfem"/>
     </div>
-    <div id="right_holderMen">
-      <img src="images/direita.png" onClick="slidegalleryMen(1)" class="rightmen" />
+    <div id="right_holderFem">
+      <img src="images/direita.png" onClick="slidegalleryFem(1)" class="rightfem" />
     </div>
   </div>
 

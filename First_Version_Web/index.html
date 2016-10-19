@@ -14,6 +14,8 @@
     <script src="./js/functions.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/responsive.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/responsivemobile.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -28,7 +30,6 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <a  href="#" id="subir"></a>
-    <header class="bgParallax fullSizeSlide" id="mobile"></header>
     <header class="mulher bgParallax fullSizeSlide" id="mulher"></header>
     <section id="buttons">
         <a href="#" class="prev">&and;</a>
@@ -54,6 +55,15 @@
                             <img onmouseover="preview.src=img2.src" name="img2" src="images/3-chelsea-handler-insta1-1920x1080.jpg" alt="" />
                         </div>
                     </div>
+                    <div id="galleryMobile" onload="slidegalleryAfem()">
+                    <img src="images/img1.jpg" id="imgGalFem"/>
+                    <div id="left_holderFem">
+                      <img src="imagesmobile/esquerda.png" onClick="slidegalleryFem(-1)" class="leftfem"/>
+                    </div>
+                    <div id="right_holderFem">
+                      <img src="imagesmobile/direita.png" onClick="slidegalleryFem(1)" class="rightfem" />
+                    </div>
+                    </div>
                 </article>
             </div>
         </div>
@@ -68,27 +78,42 @@
                     </div>
                     <div class="thumbnails2">
                         <img onmouseover="preview2.src=img20.src" name="img20" src="images/4-mamilo-homem4-1920x1080.jpg" alt="" />
-                        <img onmouseover="preview2.src=img19.src" name="img19" src="images/4-mamilo-homem6-1920x1080.jpg" alt="" />
+                        <img onmouseover="preview2.src=img19.src" name="img19" src="images/4-mamilo-homem13.jpg" alt="" />
                         <img onmouseover="preview2.src=img18.src" name="img18" src="images/4-mamilo-homem8-1920x1080.jpg" alt="" />
                         <img onmouseover="preview2.src=img17.src" name="img17" src="images/4-mamilo-homem11-1920x1080.jpg" alt="" />
                         <img onmouseover="preview2.src=img16.src" name="img16" src="images/4-mamilo-homem12-1920x1080.jpg" alt="" />
                     </div>
                 </div>
+                <div id="galleryMobile" onload="slidegalleryAmen()">
+                  <img src="imagesmobile/imagem1.jpg" id="imgGalMen"/>
+                  <div id="left_holderMen">
+                    <img src="imagesmobile/esquerda.png" onClick="slidegalleryMen(-1)" class="leftmen"/>
+                  </div>
+                  <div id="right_holderMen">
+                    <img src="imagesmobile/direita.png" onClick="slidegalleryMen(1)" class="rightmen" />
+                  </div>
+                </div>
             </article>
           </div>
         </div>
         <div id="slide5" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-            <video class="fullslide-video videoback fullSizeSlide" id="video1">
+            <video class="fullslide-video fullSizeSlide notebook" id="video1">
               <source src="videos/SLIDE_05.mp4" type="video/mp4">
               <source src="videos/SLIDE_05.webm" type="video/webm">
             </video>
+            <div id="mobile"  class="fullSizeSlide">
+            <video class="fullslide-video videoback fullSizeSlide" id="video1_mobile">
+              <source src="videosmobile/SLIDE_05_mobile.mp4" type="video/mp4">
+              <source src="videosmobile/SLIDE_05_mobile.webm" type="video/webm">
+            </video>
+          </div>
         </div>
         <div id="slide6" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
         </div>
         <div id="slide7" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
           <div class="slidepadding" style="padding-right: 450px; color: black;">
             <article>
-                <p class="rfExample renderedFont">muitas mulheres não sabem reconhecer sinais que alertam: pode haver algo errado com sua mama. </p>
+                <p class="rfExample renderedFont">muitas mulheres não sabem reconhecer sinais que alertam: <br/>pode haver algo errado com sua mama. </p>
                 <br />
                 <p>Vermelhidão, pele endurecida, áreas estufadas, feridas que não cicatrizam, coceira que não passa, saída de líquido pelo mamilo, caroço sob a pele.</p>
             </article>
@@ -114,24 +139,42 @@
           </div>
         </div>
         <div id="slide11" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-            <video class="fullslide-video videoback fullSizeSlide" id="video3">
+            <video class="fullslide-video notebook fullSizeSlide" id="video3">
             <source src="videos/SLIDE_011.mp4" type="video/mp4">
             <source src="videos/SLIDE_011.webm" type="video/webm">
           </video>
+          <div id="mobile"  class="fullSizeSlide">
+          <video class="fullslide-video videoback fullSizeSlide" id="video3_mobile">
+            <source src="videosmobile/SLIDE_11_mobile.mp4" type="video/mp4">
+            <source src="videosmobile/SLIDE_11_mobile.webm" type="video/webm">
+          </video>
+        </div>
         </div>
         <div id="slide12" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-          <video class="fullslide-video videoback fullSizeSlide" id="video12" >
-          <source src="videos/SLIDE_012.mp4" type="video/mp4">
-          <source src="videos/SLIDE_012.webm" type="video/webm">
+          <video class="fullslide-video notebook fullSizeSlide" id="video12" >
+            <source src="videos/SLIDE_012.mp4" type="video/mp4">
+            <source src="videos/SLIDE_012.webm" type="video/webm">
+          </video>
+        <div id="mobile" class="fullSizeSlide">
+        <video class="fullslide-video videoback fullSizeSlide" id="video12_mobile">
+          <source src="videosmobile/SLIDE_12_mobile.mp4" type="video/mp4">
+          <source src="videosmobile/SLIDE_12_mobile.webm" type="video/webm">
         </video>
+      </div>
         </div>
         <div id="slide13" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
         </div>
         <div id="slide14" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-            <video class="fullslide-video videoback fullSizeSlide" id="video2" >
+            <video class="fullslide-video notebook fullSizeSlide" id="video2" >
              <source src="videos/SLIDE_014.mp4" type="video/mp4">
              <source src="videos/SLIDE_014.webm" type="video/webm">
             </video>
+            <div id="mobile" class="fullSizeSlide">
+            <video class="fullslide-video videoback fullSizeSlide" id="video2_mobile">
+              <source src="videosmobile/SLIDE_14_mobile.mp4" type="video/mp4">
+              <source src="videosmobile/SLIDE_14_mobile.webm" type="video/webm">
+            </video>
+          </div>
         </div>
         <div id="slide15" class="bgParallax slideBackground" data-speed="15">
             <article align="center">
