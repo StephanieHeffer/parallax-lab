@@ -20,6 +20,11 @@ p.rfExample {
         font-weight: bold;
         text-shadow: 1px 1px 0.75px #708090;
   }
+  video{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+  }
 h1{
   text-align: center;
 }
