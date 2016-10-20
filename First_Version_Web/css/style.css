@@ -224,7 +224,18 @@ div.pics img{
 .cel{
   display: none;
 }
-
+.lista ul {
+  margin-top:0;
+  padding-left:110px;
+  text-align:left;
+  list-style:none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
 article h1 {font-size:40px;}
 article p {line-height: 30px; font-size:20px; margin-top:0px;}
 article p a { text-decoration:none; font-size:14px;}
