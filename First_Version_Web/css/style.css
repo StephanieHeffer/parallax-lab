@@ -83,14 +83,21 @@ section#buttons a:hover{
   min-width: 100%;
   background-color: #5b5b57;
   overflow: hidden;
-  background: url(../images/SLIDE_001.jpg) no-repeat center center fixed;
+  background: no-repeat center center fixed;
    -webkit-background-size: 100% auto;
    -moz-background-size: 100% auto;
    -ms-background-size: 100% auto;
    -o-background-size: 100% auto;
    background-size: 105% auto;
 }
-
+#imgnote{
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+#imgmobile{
+    display: none;
+  }
 .thumbnails img {
 	height: 80px;
 	border: 4px solid #555;
@@ -131,12 +138,6 @@ section#buttons a:hover{
   display: none;
 }
 
-div.pics img{
-  float: left;
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
 
 .fullSizeSlide{
 
@@ -154,33 +155,37 @@ div.pics img{
   background-size: cover;
   overflow: hidden;
 }
+.slide7mobile{
+  display: none;
+}
+/*
   #slide2 {
     background-image: url("../images/SLIDE_002.jpg");
-  }
+  } */
   #slide3 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide4 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
-  }
+  }/*
   #slide6 {
     background-image: url("../images/SLIDE_006.jpg");
-  }
+  } */
   #slide7 {
     background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
-  }
+  }/*
   #slide8 {
     background-image: url("../images/SLIDE_008.jpg");
   }
   #slide9 {
     background-image: url("../images/SLIDE_009.jpg");
-  }
+  } */
   #slide10 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
-  }
+  }/*
   #slide13 {
     background-image: url("../images/SLIDE_013.jpg");
-  }
+  } */
  #slide15 {
   background-image: url("../images/background15.jpg");
   height: 70px;
