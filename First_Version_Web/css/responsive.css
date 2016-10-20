@@ -153,7 +153,11 @@
 }
 .slide7mobile{
   display: block;
-  font-size: 15%;
+  }
+.slide7font p{
+  font-size: 150%;
+  color: white;
+  text-shadow: 1.5px 1.5px 1px #8c7373;
 }
 /**@media only screen and (max-device-width: 500px) { } **/
   /*.mulher{
