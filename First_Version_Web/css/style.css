@@ -18,7 +18,7 @@ p.rfExample {
         font-family:'BebasNeueRegular';
         font-size: 30px;
         font-weight: bold;
-        text-shadow: 1.5px 1.5px 0.5px #888888;
+        text-shadow: 1px 1px 0.75px #708090;
   }
 h1{
   text-align: center;
@@ -26,6 +26,7 @@ h1{
 p {
 	font-family: Lekton;
 	font-style: normal;
+  text-shadow: 1px 1px 0.5px #708090;
 }
 /** BOTOES**/
 section#buttons{
@@ -66,7 +67,7 @@ section#buttons a:hover{
 	max-width: 1920px;
 	position: relative;
   min-width: 100%;
-	background-color: transparent;
+	background-color: #5b5b57;
 	background-position: 50% 0;
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -80,7 +81,7 @@ section#buttons a:hover{
 .mulher{
   position: relative;
   min-width: 100%;
-  background-image: url("../images/SLIDE_001.jpg");
+  background-color: #5b5b57;
   overflow: hidden;
   background: url(../images/SLIDE_001.jpg) no-repeat center center fixed;
    -webkit-background-size: 100% auto;
@@ -103,7 +104,6 @@ section#buttons a:hover{
 }
 
 .preview img {
-	border: 4px solid #444;
 	padding: 1px;
 	height: 400px;
 	width: auto;
@@ -122,7 +122,6 @@ section#buttons a:hover{
 }
 
 .preview2 img {
-	border: 4px solid #444;
 	padding: 1px;
 	height: 400px;
 	width: auto;
@@ -152,7 +151,6 @@ div.pics img{
   background-attachment: fixed;
   background-origin: initial;
   background-clip: initial;
-  background-color: initial;
   background-size: cover;
   overflow: hidden;
 }
@@ -229,9 +227,9 @@ article h1 {font-size:40px;}
 article p {line-height: 30px; font-size:20px; margin-top:0px;}
 article p a { text-decoration:none; font-size:14px;}
 footer{
-	height: 400px;
+	height: 350px;
 	color:#ccc;
-	font-size:12px;
+	font-size:15px;
   text-align: center;
 
 	position:relative;

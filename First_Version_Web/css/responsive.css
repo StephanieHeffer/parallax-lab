@@ -73,10 +73,14 @@ div.mobile-colapse {
   position: relative;
 }
 #imgGalMen{
-     height: 100px;
-     width: auto;
      position: absolute;
+    right: 0px;
+    padding-right: 0px;
+    left: 0px;
+    height: 150px;
+    width: 280px;
    }
+   /*
    #left_holderMen{
      height: 100px;
      width: 50px;
@@ -104,13 +108,15 @@ div.mobile-colapse {
      position: absolute;
      top: 40%;
      right: 0px;
-   }
+   } */
    #imgGalFem{
-      height: 450px;
-      width: 650px;
+     width: 280px;
+   right: 0px;
+   left: 0px;
+   height: 150px;
       position: absolute;
     }
-    #left_holderFem{
+    /**#left_holderFem{
       height: 450px;
       width: 100px;
       position: absolute;
@@ -137,8 +143,8 @@ div.mobile-colapse {
       position: absolute;
       top: 40%;
       right: 0px;
-    }
-  
+    } */
+
 /**@media only screen and (max-device-width: 500px) { } **/
   .mulher{
     background-image: url("../imagesmobile/SLIDE_01_mobile.jpg");
@@ -148,6 +154,10 @@ div.mobile-colapse {
   }
   #slide6 {
     background-image: url("../imagesmobile/SLIDE_06_mobile.jpg");
+  }
+  #slide7 {
+    font-size: 30%;
+    padding: 0 0 0 0;
   }
   #slide8 {
     background-image: url("../imagesmobile/SLIDE_08_mobile.jpg");
