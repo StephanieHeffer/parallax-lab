@@ -6,20 +6,10 @@
   display: none;
 }
 
-/**#mulher{
-  display: none;
-}
-#mobile{
-  display: block;
-  background-image: url("../images/testemobile.png");
-  position: relative;
-  min-width: 100%;
-  min-height: 100%;
-}
- **/
  #imgnote{
    display: none;
  }
+
  #imgmobile{
      display: block;
      height: 100%;
@@ -40,35 +30,20 @@
 
 .preview img {
   display: none;
-    /*border: 4px solid #444;
-    padding: 1px;
-    height: 175px;
-    width: auto;*/
 }
 
 .thumbnails img {
   display: none;
-  /*  height: 30px;
-    border: 4px solid #555;
-    padding: 1px;
-    margin: 0 10px 10px 0; */
 }
 
 .preview2 img {
   display: none;
-  /*  border: 4px solid #444;
-    padding: 1px;
-    height: 175px;
-    width: auto; */
 }
 
 .thumbnails2 img {
   display: none;
-    /**height: 30px;
-    border: 4px solid #555;
-    padding: 1px;
-    margin: 0 10px 10px 0; **/
 }
+
 #galleryMobile{
   display: block;
   height: 100px;
@@ -76,6 +51,7 @@
   margin: 20px auto;
   position: relative;
 }
+
 #imgGalMen{
      position: absolute;
     right: 0px;
@@ -84,101 +60,50 @@
     height: 150px;
     width: 280px;
    }
-   /*
-   #left_holderMen{
-     height: 100px;
-     width: 50px;
-     position: absolute;
-     left: 0px;
-     top:0px;
-   }
-   #right_holderMen{
-     height: 100px;
-     width: 50px;
-     position: absolute;
-     right: 0px;
-     top: 0px;
-   }
-   .leftmen{
-     height: 50px;
-     width: 50px;
-     position: absolute;
-     top: 40%;
-     left: 0px;
-   }
-   .rightmen{
-     height: 50px;
-     width: 50px;
-     position: absolute;
-     top: 40%;
-     right: 0px;
-   } */
-   #imgGalFem{
-     width: 280px;
+
+#imgGalFem{
+   width: 280px;
    right: 0px;
    left: 0px;
    height: 150px;
-      position: absolute;
+  position: absolute;
     }
-    /**#left_holderFem{
-      height: 450px;
-      width: 100px;
-      position: absolute;
-      left: 0px;
-      top:0px;
-    }
-    #right_holderFem{
-      height: 450px;
-      width: 100px;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .leftfem{
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      top: 40%;
-      left: 0px;
-    }
-    .rightfem{
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      top: 40%;
-      right: 0px;
-    } */
+
 .slide7note{
   display: none;
 }
+
 .slide7mobile{
   display: block;
   }
+
 .slide7font p{
   font-size: 150%;
   color: white;
   text-shadow: 1.5px 1.5px 1px #8c7373;
 }
-/**@media only screen and (max-device-width: 500px) { } **/
-  /*.mulher{
-    background-image: url("../imagesmobile/SLIDE_01_mobile.jpg");
-   } */
-  /**#slide2 {
-    background-image: url("../imagesmobile/SLIDE_02_mobile.jpg");
-  }
-  #slide6 {
-    background-image: url("../imagesmobile/SLIDE_06_mobile.jpg");
-  } **/
-  /*#slide7 {
-    font-size: 30%;
-    padding: 0 0 0 0;
-  } */
-  /**#slide8 {
-    background-image: url("../imagesmobile/SLIDE_08_mobile.jpg");
-  }
-  #slide9 {
-    background-image: url("../imagesmobile/SLIDE_09_mobile.jpg");
-  }
-  #slide13 {
-    background-image: url("../imagesmobile/SLIDE_13_mobile.jpg");
-  } **/
+
+#slide15{
+  height: 100px;
+}
+
+footer{
+  display: none;
+}
+
+#footerMobile{
+  display: block;
+  height: 500px;
+  color:#ccc;
+  font-size:15px;
+  text-align: center;
+
+  position:relative;
+  z-index:-2;
+
+  background-color:#31353a;
+
+  background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+  background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+  background-image:linear-gradient(top, #31353a, #2f3337);
+}

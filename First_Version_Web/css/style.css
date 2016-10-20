@@ -303,7 +303,7 @@ footer a.logo:before{
 	vertical-align: text-top;
 }
 
-footer p{
+footer h3{
 	width: 90%;
 	margin-right: 10%;
 	padding: 9px 0;
@@ -322,11 +322,11 @@ footer p{
 	transition: opacity 0.4s;
 }
 
-footer > ul > li:hover p{
+footer > ul > li:hover h3{
 	opacity:1;
 }
 
-footer p:before{
+footer h3:before{
 	content: '';
 	display: inline-block;
 	background: url('https://tpc.googlesyndication.com/simgad/16415676975669100039') no-repeat;
@@ -336,18 +336,21 @@ footer p:before{
 	vertical-align: text-bottom;
 }
 
-footer p.home:before{
+footer h3.home:before{
 	background-position: 0 -110px;
 }
 
-footer p.services:before{
+footer h3.services:before{
 	background-position: 0 -129px;
 }
 
-footer p.reachus:before{
+footer h3.reachus:before{
 	background-position: 0 -89px;
 }
 
-footer p.clients:before{
+footer h3.clients:before{
 	background-position: 0 -69px;
+}
+#footerMobile{
+  display: none;
 }
