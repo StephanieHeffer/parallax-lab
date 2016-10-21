@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
     let video = document.getElementById('video2');
@@ -42,3 +42,4 @@ $(window).scroll(function() {
     }
 
 });
+*/

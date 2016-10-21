@@ -66,6 +66,9 @@ section#buttons a:hover{
 #mobile{
   display: none;
 }
+.mobile{
+  display: none;
+}
 .bgParallax {
 	margin: 0 auto;
 	width: auto;

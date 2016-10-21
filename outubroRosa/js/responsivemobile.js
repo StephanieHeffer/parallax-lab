@@ -1,3 +1,4 @@
+/*
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
@@ -41,3 +42,4 @@ $(window).scroll(function() {
         video12.pause();
     }
 });
+*/

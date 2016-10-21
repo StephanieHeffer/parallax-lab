@@ -2,6 +2,9 @@
 #mobile{
     display: block;
 }
+.mobile{
+    display: block;
+}
 .notebook{
   display: none;
 }
