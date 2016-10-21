@@ -1,6 +1,5 @@
 
   function resizeFullSizeSlides() {
-    console.log('resizeFullSizeSlides');
     let heightWindow = window.innerHeight;
     let listSlides = $('.fullSizeSlide');
 
