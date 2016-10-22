@@ -56,7 +56,7 @@ section#buttons{
   z-index: 10;
 }
 section#buttons a{
-  background: #333;
+  background: #303030;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -69,7 +69,7 @@ section#buttons a{
   z-index: 10;
 }
 section#buttons a:hover{
-  background: #d3767e;
+  background: #D54A6B;
 }
 
 .slidepadding{
@@ -87,7 +87,7 @@ section#buttons a:hover{
 	max-width: 1920px;
 	position: relative;
   min-width: 100%;
-	background-color: #5b5b57;
+	background-color: # #303030;
 	background-position: 50% 0;
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -101,7 +101,7 @@ section#buttons a:hover{
 .mulher{
   position: relative;
   min-width: 100%;
-  background-color: #5b5b57;
+  background-color: #303030;
   overflow: hidden;
   background: no-repeat center center fixed;
    -webkit-background-size: 100% auto;
@@ -120,13 +120,13 @@ section#buttons a:hover{
   }
 .thumbnails img {
 	height: 80px;
-	border: 4px solid #555;
+	border: 4px solid  #303030;
 	padding: 1px;
 	margin: 0 10px 10px 0;
 }
 
 .thumbnails img:hover {
-	border: 4px solid #d3767e;
+	border: 4px solid #D54A6B;
 	cursor:pointer;
 }
 
@@ -138,13 +138,13 @@ section#buttons a:hover{
 
 .thumbnails2 img {
 	height: 80px;
-	border: 4px solid #555;
+	border: 4px solid  #303030;
 	padding: 1px;
 	margin: 0 10px 10px 0;
 }
 
 .thumbnails2 img:hover {
-	border: 4px solid #d3767e;
+	border: 4px solid #D54A6B;
 	cursor:pointer;
 }
 
@@ -172,7 +172,6 @@ section#buttons a:hover{
   background-attachment: fixed;
   background-origin: initial;
   background-clip: initial;
-  background-size: cover;
   overflow: hidden;
 }
 .slide7mobile{
@@ -278,7 +277,7 @@ footer > ul > li{
 	float:left;
 }
 
-footer ul{
+ul{
 	list-style: none;
 }
 
