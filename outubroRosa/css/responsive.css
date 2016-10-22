@@ -48,27 +48,24 @@
 
 #galleryMobile{
   display: block;
-  height: 100px;
+  height: 150px;
   width: auto;
   margin: 20px auto;
-  position: relative;
+  position: absolute;
 }
 
 #imgGalMen{
-     position: absolute;
-    right: 0px;
-    padding-right: 0px;
-    left: 0px;
-    height: 150px;
-    width: 280px;
+  right: 0px;
+  left: 0px;
+  height: 150px;
+  position: absolute;
    }
 
 #imgGalFem{
-   width: 280px;
    right: 0px;
    left: 0px;
    height: 150px;
-  position: absolute;
+   position: absolute;
     }
 
 .slide7note{
@@ -105,9 +102,6 @@ footer{
 
   background-color:#31353a;
 
-  background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
-  background-image:-moz-linear-gradient(top, #31353a, #2f3337);
-  background-image:linear-gradient(top, #31353a, #2f3337);
 }
 
 #slide7{

@@ -16,14 +16,18 @@ body{
 }
 @font-face {
   font-family: 'Anaheim';
-  src: url('../fonts/Cvwn58PR0rYLGpoTMF4KMA.ttf') format('truetype');
+  src: url('../fonts/Anaheim-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'vintage';
+  src: url('../fonts/vinatege.ttf') format('truetype');
 }
 p.footerFont{
-  font-family:'Anaheim';
+  font-family:'Anaheim', 'vintagem';
   font-size: 15px;
 }
 h3{
-  font-family:'Anaheim';
+  font-family:'Anaheim', 'vintagem';
   font-size: 15px;
 }
 p.rfExample {
@@ -33,7 +37,6 @@ p.rfExample {
         text-shadow: 1px 1px 0.75px #708090;
   }
   video{
-    object-fit: fill;
     height: 100%;
     width: 100%;
   }
