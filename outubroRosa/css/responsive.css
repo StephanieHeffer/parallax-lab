@@ -1,4 +1,9 @@
-
+.bgParallax article {
+  width: 50%;
+  text-align: center;
+  margin:0 auto;
+  /**padding:20% 0 0;**/
+}
 #mobile{
     display: block;
 }
@@ -17,6 +22,7 @@
      display: inline-block;
      height: 100%;
      width: 100%;
+
    }
 
 .videoresp {
@@ -48,24 +54,26 @@
 
 #galleryMobile{
   display: block;
-  height: 150px;
-  width: auto;
-  margin: 20px auto;
+  vertical-align: middle;
+  float: none;
   position: absolute;
+  width:100px;
+	height:100px;
+	top:50%;
+	left:50%;
+	margin-top:-50px;
+	margin-left:-50px;
 }
 
 #imgGalMen{
-  right: 0px;
-  left: 0px;
-  height: 150px;
-  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+
    }
 
 #imgGalFem{
-   right: 0px;
-   left: 0px;
-   height: 150px;
-   position: absolute;
+  max-width: 100%;
+  max-height: 100%;
     }
 
 .slide7note{
@@ -92,7 +100,7 @@ footer{
 
 #footerMobile{
   display: block;
-  height: 550px;
+  height: 600px;
   color:#ccc;
   font-size:15px;
   text-align: center;

@@ -6,6 +6,7 @@ html {
 * {margin:0; padding: 0;}
 html{height:100%;}
 body{
+  background-color: #303030;
   color: white;
 	position:relative;
   overflow: hidden;
@@ -34,7 +35,7 @@ p.rfExample {
         font-family:'BebasNeueRegular';
         font-size: 30px;
         font-weight: bold;
-        text-shadow: 1px 1px 0.75px #708090;
+        text-shadow: 1px 1px 0.75px #303030;
   }
   video{
     height: 100%;
@@ -114,7 +115,6 @@ section#buttons a:hover{
    background-size: 105% auto;
 }
 #imgnote{
-  object-fit: fill;
   height: 100%;
   width: 100%;
 }
@@ -232,7 +232,7 @@ section#buttons a:hover{
 }
 
 .bgParallax article {
-  width: 70%;
+  width: 90%;
   text-align: center;
   margin:0 auto;
   /**padding:20% 0 0;**/

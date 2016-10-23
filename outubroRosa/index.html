@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <title>Outubro Rosa</title>
@@ -16,8 +16,9 @@
     <script src="./js/responsive.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/responsivemobile.js"></script>
+    <script src="./js/orientationmobile.js"></script>
 </head>
-<body>
+<body onload="doOnOrientationChange();">
     <div id="fb-root"></div>
     <script>
         (function(d, s, id) {
@@ -29,6 +30,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    <div id="landscape">
     <header class="mulher bgParallax fullSizeSlide" id="mulher">
       <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_001.jpg" />
       <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_01_mobile.jpg" />
@@ -45,8 +47,9 @@
         <div id="slide3" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
             <div class="slidepadding">
                 <article>
-                    <p>Mas nem todos. Aparentemente, apenas os femininos incomodam. Todas as imagens abaixo foram banidas de diferentes redes sociais. Algumas renderam suspensões da conta da usuária.</p>
+                    <p style="font-size: 25px;text-shadow: 2px 2px 2px #303030;"><b>Mas nem todos.<br/> Aparentemente, apenas os femininos incomodam. Todas as imagens abaixo foram banidas de diferentes redes sociais. Algumas renderam suspensões da conta da usuária.</b></p>
                     <br/>
+                  </article>
                     <div class="gallery" align="center">
                         <div class="preview" align="center">
                             <img name="preview" src="images/3-celeste-liddle-facebook-1920x1080.jpg" alt="" />
@@ -62,15 +65,15 @@
                     <div id="galleryMobile" onload="slidegalleryAfem()">
                     <img src="images/img1.jpg" id="imgGalFem"/>
                     </div>
-                </article>
             </div>
         </div>
         <div id="slide4" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
           <div class="slidepadding">
             <article>
-                <p>Estas imagens não foram banidas de nenhum rede social.</p>
-                <br/>
-                <div class="gallery2" align="center">
+              <p style="font-size: 25px;text-shadow: 2px 2px 2px #303030;"><b>Estas imagens não foram banidas de nenhum rede social.</b></p>
+              <br/>
+            </article>
+            <div class="gallery2" align="center">
                     <div class="preview2" align="center">
                         <img name="preview2" src="images/4-mamilo-homem4-1920x1080.jpg" alt="" />
                     </div>
@@ -85,7 +88,6 @@
                 <div id="galleryMobile" onload="slidegalleryAmen()">
                   <img src="imagesmobile/imagem1.jpg" id="imgGalMen"/>
                 </div>
-            </article>
           </div>
         </div>
         <div id="slide5" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
@@ -107,13 +109,13 @@
           <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_06_mobile.jpg" />
         </div>
         <div id="slide7" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-          <div class="slidepadding slide7note" style="padding-right: 450px; color: black;">
+          <div class="slidepadding slide7note" style="padding-right: 400px; color: black;">
             <article>
                 <p class="rfExample renderedFont">muitas mulheres não sabem reconhecer <font color="#ffbf00">sinais</font> que alertam:
                   <br/>pode haver algo <font color="#ffbf00">errado</font> com sua mama. </p>
                 <br/>
-                <p>Vermelhidão,<br/> Pele endurecida,<br/> Áreas estufadas, <br/>Feridas que não cicatrizam, <br/>
-                  Coceira que não passa, <br/> Saída de líquido pelo mamilo, <br/>Caroço sob a pele.</p>
+                <p style="font-size: 30px;text-shadow: 2px 2px 2px #303030;"><b><font color="#ffbf00">Vermelhidão,<br/> Pele endurecida,<br/> Áreas estufadas, <br/>Feridas que não cicatrizam, <br/>
+                  Coceira que não passa, <br/> Saída de líquido pelo mamilo, <br/>Caroço sob a pele.</font></b></p>
             </article>
           </div>
           <!--<div class="slidepadding slide7mobile" style="
@@ -146,18 +148,6 @@
           </div> -->
           <div class="slidepadding slide7mobile">
             <article class="slide7font">
-                <!--<p class="rfExample renderedFont">muitas mulheres não sabem reconhecer <font color="#ffbf00">sinais</font> que alertam:
-                  pode haver algo <font color="#ffbf00">errado</font> com sua mama. </p>
-                <br/>
-                <ul>
-                  <li>Vermelhidão</li>
-                  <li>Pele endurecida</li>
-                  <li>Áreas estufadas</li>
-                  <li>Feridas que não cicatrizam</li>
-                  <li>Coceira que não passa</li>
-                  <li>Saída de líquido pelo mamilo</li>
-                  <li>Caroço sob a pele</li>
-                </ul> -->
             </article>
           </div>
         </div>
@@ -172,7 +162,7 @@
         <div id="slide10" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
           <div class="slidepadding">
             <article>
-                <p class="rfExample renderedFont">muitas mulheres não fazem o exame por medo.</p>
+                <p class="rfExample renderedFont" style="font-size: 50px; text-shadow: 2px 2px 2px #303030;">muitas mulheres não fazem o exame por medo.</p>
                 <br />
                 <style>
                   .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -304,5 +294,6 @@
       <br />
         <img src="images/uzmk_logo.jpg" style="width: 120px;"/>
     </div>
+</div>
 </body>
 </html>
