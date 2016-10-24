@@ -32,17 +32,15 @@
       <img src="images/orientation.png"/>
     </div>
     <div id="landscape">
-        <header class="mulher bgParallax fullSizeSlide" id="mulher">
-            <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_001.jpg" />
+        <div class="mulher bgParallax fullSizeSlide" id="slide1">
             <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_01_mobile.jpg" />
-        </header>
+        </div>
         <section id="buttons">
             <a href="#" class="prev">&and;</a>
             <a href="#" class="next">&or;</a>
         </section>
         <section id="contente" class="content">
             <div id="slide2" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_002.jpg" />
                 <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_02_mobile.jpg" />
             </div>
             <div id="slide3" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
@@ -93,20 +91,37 @@
                 </div>
             </div>
             <div id="slide5" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <video class="fullslide-video fullSizeSlide notebook" id="video1" poster="videos/SLIDE5.png">
-              <source src="videos/SLIDE_05.mp4" type="video/mp4" />
-              <source src="videos/SLIDE_05.webm" type="video/webm" />
-              <source src="videos/SLIDE_05.ogv" type="video/ogv" />
-            </video>
+              <video class="fullslide-video fullSizeSlide notebook" id="video1">
+                <source src="videos/SLIDE_05.mp4" type="video/mp4" />
+                <source src="videos/SLIDE_05.webm" type="video/webm" />
+                <source src="videos/SLIDE_05.ogv" type="video/ogv" />
+              </video>
 
-                <video class="fullslide-video videoback fullSizeSlide mobile" id="video1_mobile" poster="videosmobile/SLIDE5_mobile.png">
-              <source src="videosmobile/SLIDE_05_mobile.mp4" type="video/mp4" />
-              <source src="videosmobile/SLIDE_05_mobile.webm" type="video/webm" />
-              <source src="videosmobile/SLIDE_05_mobile.ogv" type="video/ogv" />
-            </video>
+              <div class="fakeVideo mobile">
+                <!--img style="display:block" class="fakeVideoImage" src="videosmobile/slide05/slide05_004.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_006.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_008.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_010.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_012.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_014.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_016.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_018.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_021.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_026.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_033.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_037.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_038.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_041.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_043.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_050.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_055.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_056.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_057.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide05/slide05_058.jpg" /-->
+                <img style="display:block" class="fakeVideoImage" src="videosmobile/slide05/slide05_059.jpg" />
+              </div>
             </div>
             <div id="slide6" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_006.jpg" />
                 <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_06_mobile.jpg" />
             </div>
             <div id="slide7" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
@@ -119,17 +134,11 @@
                   Coceira que não passa, <br/> Saída de líquido pelo mamilo, <br/>Caroço sob a pele.</font></b></p>
                     </article>
                 </div>
-                <div class="slidepadding slide7mobile">
-                    <article class="slide7font">
-                    </article>
-                </div>
             </div>
             <div id="slide8" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_008.jpg" />
                 <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_08_mobile.jpg" />
             </div>
             <div id="slide9" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_009.jpg" />
                 <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_09_mobile.jpg" />
             </div>
             <div id="slide10" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
@@ -164,50 +173,88 @@
                 </div>
             </div>
             <div id="slide11" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <video class="fullslide-video notebook fullSizeSlide" id="video3" poster="videos/SLIDE11.png">
-            <source src="videos/SLIDE_011.mp4" type="video/mp4" />
-            <source src="videos/SLIDE_011.webm" type="video/webm" />
-            <source src="videos/SLIDE_011.ogv" type="video/ogv" />
-          </video>
-                <div id="mobile" class="fullSizeSlide">
-                    <video class="fullslide-video videoback fullSizeSlide" id="video3_mobile" poster="videosmobile/SLIDE11_mobile.png">
-            <source src="videosmobile/SLIDE_11_mobile.mp4" type="video/mp4" />
-            <source src="videosmobile/SLIDE_11_mobile.webm" type="video/webm" />
-            <source src="videosmobile/SLIDE_11_mobile.ogv" type="video/ogv" />
-          </video>
-                </div>
+              <video class="fullslide-video notebook fullSizeSlide" id="video3">
+                <source src="videos/SLIDE_011.mp4" type="video/mp4" />
+                <source src="videos/SLIDE_011.webm" type="video/webm" />
+                <source src="videos/SLIDE_011.ogv" type="video/ogv" />
+              </video>
+
+              <div class="fakeVideo mobile">
+                <!--img style="display:block" class="fakeVideoImage" src="videosmobile/slide11/slide11_001.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_004.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_005.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_009.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_015.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_019.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_021.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_023.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_025.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_027.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_029.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_031.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_033.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_035.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_041.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_046.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide11/slide11_047.jpg" /-->
+                <img style="display:block" class="fakeVideoImage" src="videosmobile/slide11/slide11_048.jpg" />
+              </div>
             </div>
             <div id="slide12" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <video class="fullslide-video notebook fullSizeSlide" id="video12" poster="videos/SLIDE12.png">
-            <source src="videos/SLIDE_012.mp4" type="video/mp4" />
-            <source src="videos/SLIDE_012.webm" type="video/webm" />
-            <source src="videos/SLIDE_012.ogv" type="video/ogv" />
-          </video>
-                <div id="mobile" class="fullSizeSlide">
-                    <video class="fullslide-video videoback fullSizeSlide" id="video12_mobile" poster="videosmobile/SLIDE12_mobile.png">
-          <source src="videosmobile/SLIDE_12_mobile.mp4" type="video/mp4" />
-          <source src="videosmobile/SLIDE_12_mobile.webm" type="video/webm" />
-          <source src="videosmobile/SLIDE_12_mobile.ogv" type="video/ogv" />
-        </video>
-                </div>
+              <video class="fullslide-video notebook fullSizeSlide" id="video12">
+                <source src="videos/SLIDE_012.mp4" type="video/mp4" />
+                <source src="videos/SLIDE_012.webm" type="video/webm" />
+                <source src="videos/SLIDE_012.ogv" type="video/ogv" />
+              </video>
+
+              <div class="fakeVideo mobile">
+                <!--img style="display:block;" class="fakeVideoImage" src="videosmobile/slide12/slide12_001.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_005.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_009.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_013.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_017.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_021.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_025.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_029.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_033.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_037.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_041.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_047.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_061.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_081.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide12/slide12_088.jpg" /-->
+                <img style="display:block" class="fakeVideoImage" src="videosmobile/slide12/slide12_094.jpg" />
+              </div>
             </div>
             <div id="slide13" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <img id="imgnote" class="fullSizeSlide" src="images/SLIDE_013.jpg" />
                 <img id="imgmobile" class="fullSizeSlide" src="imagesmobile/SLIDE_13_mobile.jpg" />
             </div>
             <div id="slide14" class="bgParallax slideBackground fullSizeSlide" data-speed="15">
-                <video class="fullslide-video notebook fullSizeSlide" id="video2" poster="videos/SLIDE14.png">
-             <source src="videos/SLIDE_014.mp4" type="video/mp4" />
-             <source src="videos/SLIDE_014.webm" type="video/webm" />
-             <source src="videos/SLIDE_014.ogv" type="video/ogv" />
-            </video>
-                <div id="mobile" class="fullSizeSlide">
-                    <video class="fullslide-video videoback fullSizeSlide" id="video2_mobile" poster="videosmobile/SLIDE14_mobile.png">
-              <source src="videosmobile/SLIDE_14_mobile.mp4" type="video/mp4" />
-              <source src="videosmobile/SLIDE_14_mobile.webm" type="video/webm" />
-              <source src="videosmobile/SLIDE_14_mobile.ogv" type="video/ogv" />
-            </video>
-                </div>
+              <video class="fullslide-video notebook fullSizeSlide" id="video2" >
+                <source src="videos/SLIDE_014.mp4" type="video/mp4" />
+                <source src="videos/SLIDE_014.webm" type="video/webm" />
+                <source src="videos/SLIDE_014.ogv" type="video/ogv" />
+              </video>
+
+              <div class="fakeVideo mobile">
+                <img style="display:block;" class="fakeVideoImage" src="videosmobile/slide14/slide14_001.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_006.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_009.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_012.jpg" />
+
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_016.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_016.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_016.jpg" />
+
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_024.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_025.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_027.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_029.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_031.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_033.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_035.jpg" />
+                <img class="fakeVideoImage" src="videosmobile/slide14/slide14_037.jpg" />
+              </div>
             </div>
             <div id="slide15" class="bgParallax slideBackground" data-speed="15">
                 <article>

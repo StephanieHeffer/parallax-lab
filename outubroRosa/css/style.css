@@ -103,29 +103,19 @@ section#buttons a:hover{
 	max-width: 1920px;
 	position: relative;
   min-width: 100%;
-	background-color: # #303030;
-	background-position: 50% 0;
-	background-repeat: repeat;
+	background-color: #303030;
+	background-position-x: 50%;
+  background-position-y: 50%;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
   overflow: hidden;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -ms-background-size: 100% auto;
   -o-background-size: 100% auto;
-  background-size: 105% auto;
+  background-size: 100% auto;
 }
-.mulher{
-  position: relative;
-  min-width: 100%;
-  background-color: #303030;
-  overflow: hidden;
-  background: no-repeat center center fixed;
-   -webkit-background-size: 100% auto;
-   -moz-background-size: 100% auto;
-   -ms-background-size: 100% auto;
-   -o-background-size: 100% auto;
-   background-size: 105% auto;
-}
+
 #imgnote{
   height: 100%;
   width: 100%;
@@ -190,7 +180,7 @@ section#buttons a:hover{
 
 .slideBackground{
   background-position-x: 50%;
-  background-position-y: 0px;
+  background-position-y: 50%;
   background-size: cover;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat;
@@ -216,38 +206,43 @@ section#buttons a:hover{
 .slide7mobile{
   display: none;
 }
-/*
+
+  #slide1 {
+    background-image: url("../images/SLIDE_001.jpg");
+  }
+
   #slide2 {
     background-image: url("../images/SLIDE_002.jpg");
-  } */
+  }
   #slide3 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
   }
   #slide4 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
-  }/*
+  }
   #slide6 {
     background-image: url("../images/SLIDE_006.jpg");
-  } */
+  }
   #slide7 {
     background-image: url("../images/7-mulher-janela-Depositphotos_41329389_original.jpg");
-  }/*
+  }
   #slide8 {
     background-image: url("../images/SLIDE_008.jpg");
   }
   #slide9 {
     background-image: url("../images/SLIDE_009.jpg");
-  } */
+  }
   #slide10 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
-  }/*
+  }
   #slide13 {
     background-image: url("../images/SLIDE_013.jpg");
-  } */
+  }
  #slide15 {
   background-image: url("../images/background15.jpg");
   height: 70px;
   text-align: center;
+  background-position-y: 0px;
 }
 #slide15 article{
   padding: 1%;

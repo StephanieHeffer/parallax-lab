@@ -128,6 +128,50 @@ footer{
 
 }
 
+
+.fakeVideo{
+  height: 100%;
+  width: 100%;
+}
+.fakeVideoImage{
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#slide1 {
+  /*background-image: url("../imagesmobile/SLIDE_01_mobile.jpg");*/
+  background-image: none;
+}
+#slide2 {
+  /*background-image: url("../imagesmobile/SLIDE_02_mobile.jpg");*/
+  background-image: none;
+}
+#slide3 {
+  background-image: url("../imagesmobile/bgpink.jpg");
+}
+#slide4 {
+  background-image: url("../imagesmobile/bgpink.jpg");
+}
+#slide6 {
+  /*background-image: url("../imagesmobile/SLIDE_06_mobile.jpg");*/
+  background-image: none;
+}
 #slide7{
   background-image: url("../imagesmobile/SLIDE_07_mobileteste.jpg");
+}
+#slide8 {
+  /*background-image: url("../imagesmobile/SLIDE_08_mobile.jpg");*/
+  background-image: none;
+}
+#slide9 {
+  /*background-image: url("../imagesmobile/SLIDE_09_mobile.jpg");*/
+  background-image: none;
+}
+#slide10 {
+  background-image: url("../imagesmobile/bgpink.jpg");
+}
+#slide13 {
+  /*background-image: url("../imagesmobile/SLIDE_13_mobile.jpg");*/
+  background-image: none;
 }
