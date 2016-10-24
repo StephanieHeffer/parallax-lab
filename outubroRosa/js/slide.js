@@ -39,8 +39,6 @@
           }, slideScrollDuration);
         }
       }
-
-      fakeVideoPause();
     }
 
     function scrollIsEnding(currentSlideElement){
@@ -53,75 +51,69 @@
         }
       }
 
-      let frameList = $(currentSlideElement).find('div.fakeVideo').find('img');
-      if(frameList.length > 0){
-        fakeVideoPlay(frameList);
-      }
-
       toggleVideoDv();
+      toggleSlide14Animation();
     }
 
     function toggleVideoDv() {
       let slideDv = $("#slide10")[0];
-
       let windowCurrentScrollPosition = $(window).scrollTop();
-      let slideList = getSlideList();
-
       let func = "pauseVideo";
       if ((windowCurrentScrollPosition < slideDv.offsetTop + 30)
         && (windowCurrentScrollPosition > slideDv.offsetTop - 30)) {
           func = "playVideo"
       }
-
       let iframe = document.getElementById("iframeYouTubeDv").contentWindow;
       iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
       iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
     }
 
-    let fakeVideoWillBePaused = false;
-    let fakeVideoLastPlayedFrameList = null;
-    function fakeVideoPause(frameList){
-      fakeVideoWillBePaused = true;
-    }
-    function fakeVideoReset(frameList){
-      frameList[0].style.display = 'block';
-      for (let i = 1; i < frameList.length; i++){
-        frameList[i].style.display = 'none';
+    function toggleSlide14Animation() {
+      let mobiDiv = $('#slide14 div.fakeVideo')[0];
+      if($(mobiDiv).css('display') == 'none') {
+        return;
+      }
+
+      let slide = $("#slide14")[0];
+      let windowCurrentScrollPosition = $(window).scrollTop();
+
+      $('#slide14img1')[0].style.display = 'block';
+      $('#slide14img2')[0].style.display = 'none';
+
+      if ((windowCurrentScrollPosition < slide.offsetTop + 30)
+        && (windowCurrentScrollPosition > slide.offsetTop - 30)) {
+          toogleSlideTimeLimit = 0;
+          window.setTimeout(slide14Animation, 250);
       }
     }
-    function fakeVideoEnded(frameList){
-      return $(frameList[frameList.length -1]).css('display') != 'none';
-    }
-    function fakeVideoPlay(frameList){
-      fakeVideoWillBePaused = false;
-      fakeVideoLastPlayedFrameList = frameList;
-      fakeVideoPlayAnimation(frameList);
-    }
-    function fakeVideoPlayAnimation(frameList){
-      for (let i = 0; i < frameList.length; i++){
-        let frame = frameList[i];
-        if($(frame).css('display') == 'none'){
-          continue;
-        }
 
-        //last Slide
-        if (i == frameList.length -1){
-          if(!fakeVideoWillBePaused){
-            fakeVideoReset(frameList);
-          }
+    let toogleSlideTimeLimit = 0;
+    function slide14Animation() {
+
+      if(toogleSlideTimeLimit > 2300)
+      {
+        toogleSlideTimeLimit = 0;
+        let s1 = $('#slide14img1')[0];
+        let s2 = $('#slide14img2')[0];
+
+        console.log($(s1).css('display'));
+        if ($(s1).css('display') != 'none') {
+          s1.style.display = 'none';
+          s2.style.display = 'block';
         } else {
-          frame.style.display = 'none';
-          frameList[i + 1].style.display = 'block';
+          s1.style.display = 'block';
+          s2.style.display = 'none';
         }
-        break;
+        console.log($(s1).css('display'));
       }
 
-      if(fakeVideoWillBePaused){
-        fakeVideoWillBePaused = false;
-      } else {
-        window.setTimeout(function(){
-          fakeVideoPlay(frameList);
-        }, 1600);
+      let slide = $("#slide14")[0];
+      let windowCurrentScrollPosition = $(window).scrollTop();
+      if ((windowCurrentScrollPosition < slide.offsetTop + 30)
+        && (windowCurrentScrollPosition > slide.offsetTop - 30)) {
+          toogleSlideTimeLimit += 250;
+          console.log(toogleSlideTimeLimit);
+          window.setTimeout(slide14Animation, 250);
       }
     }
 
