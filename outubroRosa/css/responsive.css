@@ -108,7 +108,10 @@ height: 150px;
 
 #slide15 article{
   width: 100%;
-  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
  .bgParallax article {

@@ -193,8 +193,8 @@
 
         //mousewheel
         document.onmousewheel = function(e) {
-            console.log('!!! mousewheel !!! Delta: ' + e.wheelDelta + '  detail: '+ e.detail);
-            console.log(e);
+            //console.log('!!! mousewheel !!! Delta: ' + e.wheelDelta + '  detail: '+ e.detail);
+            //console.log(e);
 
             e.preventDefault();
             if ((e.wheelDelta < 0) || (e.detail < 0)) {
