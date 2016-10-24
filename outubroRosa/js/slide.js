@@ -41,14 +41,6 @@
       }
 
       fakeVideoPause();
-      if(fakeVideoLastPlayedFrameList != null){
-        if(fakeVideoEnded(fakeVideoLastPlayedFrameList)){
-          let frames = fakeVideoLastPlayedFrameList;
-          window.setTimeout(function(){
-            fakeVideoReset(frames);
-          }, slideScrollDuration);
-        }
-      }
     }
 
     function scrollIsEnding(currentSlideElement){
@@ -93,12 +85,15 @@
           continue;
         }
 
+        //last Slide
         if (i == frameList.length -1){
-          return;
+          if(!fakeVideoWillBePaused){
+            fakeVideoReset(frameList);
+          }
+        } else {
+          frame.style.display = 'none';
+          frameList[i + 1].style.display = 'block';
         }
-
-        frame.style.display = 'none';
-        frameList[i + 1].style.display = 'block';
         break;
       }
 
