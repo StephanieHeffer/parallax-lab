@@ -24,6 +24,11 @@
      width: 100%;
 
    }
+   #imgmobile9{
+     display: block;
+     height: 100%;
+     width: 100%;
+   }
 
 .videoresp {
     max-width: 100%;
@@ -166,8 +171,6 @@ footer{
   background-image: none;
 }
 #slide9 {
-  /*background-image: url("../imagesmobile/SLIDE_09_mobile.jpg");*/
-  background-image: none;
 }
 #slide10 {
   background-image: url("../imagesmobile/bgpink.jpg");
@@ -175,4 +178,8 @@ footer{
 #slide13 {
   /*background-image: url("../imagesmobile/SLIDE_13_mobile.jpg");*/
   background-image: none;
+}
+
+#imgslide9{
+  display: none;
 }

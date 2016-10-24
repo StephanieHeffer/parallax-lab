@@ -208,6 +208,9 @@ section#buttons a:hover{
 .slide7mobile{
   display: none;
 }
+#imgmobile9{
+  display: none;
+}
 
   #slide1 {
     background-image: url("../images/SLIDE_001.jpg");
@@ -232,7 +235,7 @@ section#buttons a:hover{
     background-image: url("../images/SLIDE_008.jpg");
   }
   #slide9 {
-    background-image: url("../images/SLIDE_009.jpg");
+    /*background-image: url("../images/SLIDE_009.jpg"); */
   }
   #slide10 {
     background-image: url("../images/6-textura1-Apostrophe.jpg");
