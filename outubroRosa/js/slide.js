@@ -57,6 +57,25 @@
       if(frameList.length > 0){
         fakeVideoPlay(frameList);
       }
+
+      toggleVideoDv();
+    }
+
+    function toggleVideoDv() {
+      let slideDv = $("#slide10")[0];
+
+      let windowCurrentScrollPosition = $(window).scrollTop();
+      let slideList = getSlideList();
+
+      let func = "pauseVideo";
+      if ((windowCurrentScrollPosition < slideDv.offsetTop + 30)
+        && (windowCurrentScrollPosition > slideDv.offsetTop - 30)) {
+          func = "playVideo"
+      }
+
+      let iframe = document.getElementById("iframeYouTubeDv").contentWindow;
+      iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+      iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
     }
 
     let fakeVideoWillBePaused = false;
