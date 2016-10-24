@@ -75,6 +75,7 @@
 
       let iframe = document.getElementById("iframeYouTubeDv").contentWindow;
       iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+      iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
     }
 
     let fakeVideoWillBePaused = false;
