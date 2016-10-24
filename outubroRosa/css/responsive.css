@@ -96,6 +96,15 @@ height: 150px;
   padding-top: 100px;
 }
 
+#slide15 article div iframe{
+  display: block;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+#slide15 article iframe{
+  display: none;
+}
 
 #slide15 article{
   width: 100%;

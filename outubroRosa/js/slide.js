@@ -90,7 +90,7 @@
     let toogleSlideTimeLimit = 0;
     function slide14Animation() {
 
-      if(toogleSlideTimeLimit > 2300)
+      if(toogleSlideTimeLimit > 2000)
       {
         toogleSlideTimeLimit = 0;
         let s1 = $('#slide14img1')[0];

@@ -249,14 +249,21 @@ section#buttons a:hover{
   text-align: center;
   background-position-y: 0px;
 }
+
 #slide15 article{
   padding: 1%;
 }
 #slide15 img{
   height: 40px;
 }
-#slide15 iframe{
+
+#slide15 article div iframe{
+  display: none;
+}
+#slide15 article iframe{
   padding: 10px;
+  margin-top: -43px;
+  display: block;
 }
 
 .fullslide-video{
