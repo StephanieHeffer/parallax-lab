@@ -30,7 +30,7 @@
 }
 
 .videoback {
-    display: inline-block;
+    display: block;
     width: 100%;
     background-size: cover;
     position: relative;
@@ -53,27 +53,17 @@
 }
 
 #galleryMobile{
-  display: block;
-  vertical-align: middle;
-  float: none;
-  position: absolute;
+  display: inline;
   width:100px;
 	height:100px;
-	top:50%;
-	left:50%;
-	margin-top:-50px;
-	margin-left:-50px;
 }
 
 #imgGalMen{
-  max-width: 100%;
-  max-height: 100%;
-
+height: 150px;
    }
 
 #imgGalFem{
-  max-width: 100%;
-  max-height: 100%;
+  height: 150px;
     }
 
 .slide7note{
@@ -89,9 +79,35 @@
   color: white;
   text-shadow: 1.5px 1.5px 1px #8c7373;
 }
+.GaleriaFonte{
+  font-size: 90%;
+}
 
-#slide15{
-  height: 100px;
+.embedFonte{
+  font-size: 30px;
+}
+
+.slidepadding{
+  padding-top: 100px;
+}
+
+
+#slide15 article{
+  width: 100%;
+  padding: 10px;
+}
+
+ .bgParallax article {
+  width: 90%;
+}
+
+#slide3 .GaleriaFonte{
+  font-size: 20px;
+  font-weight: bold;
+}
+#slide4 .GaleriaFonte{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 footer{
@@ -102,7 +118,7 @@ footer{
   display: block;
   height: 600px;
   color:#ccc;
-  font-size:15px;
+  font-size:12px;
   text-align: center;
 
   position:relative;
@@ -114,194 +130,4 @@ footer{
 
 #slide7{
   background-image: url("../imagesmobile/SLIDE_07_mobileteste.jpg");
-}
-
-
-
-
-/* ----------- iPad mini ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-/* ----------- Galaxy Tab 10.1 ----------- */
-
-/* Portrait and Landscape */
-@media
-  (min-device-width: 800px)
-  and (max-device-width: 1280px) {
-
-}
-
-/* Portrait */
-@media
-  (max-device-width: 800px)
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media
-  (max-device-width: 1280px)
-  and (orientation: landscape) {
-
-}
-/* ----------- Asus Nexus 7 ----------- */
-
-/* Portrait and Landscape */
-@media screen
-  and (device-width: 601px)
-  and (device-height: 906px)
-  and (-webkit-min-device-pixel-ratio: 1.331)
-  and (-webkit-max-device-pixel-ratio: 1.332) {
-
-}
-
-/* Portrait */
-@media screen
-  and (device-width: 601px)
-  and (device-height: 906px)
-  and (-webkit-min-device-pixel-ratio: 1.331)
-  and (-webkit-max-device-pixel-ratio: 1.332)
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen
-  and (device-width: 601px)
-  and (device-height: 906px)
-  and (-webkit-min-device-pixel-ratio: 1.331)
-  and (-webkit-max-device-pixel-ratio: 1.332)
-  and (orientation: landscape) {
-
-}
-/* ----------- Kindle Fire HD 7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 800px)
-  and (max-device-width: 1280px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 800px)
-  and (max-device-width: 1280px)
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 800px)
-  and (max-device-width: 1280px)
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Kindle Fire HD 8.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: landscape) {
-
 }
