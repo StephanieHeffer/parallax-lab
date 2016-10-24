@@ -158,7 +158,8 @@ footer{
   background-image: none;
 }
 #slide7{
-  background-image: url("../imagesmobile/SLIDE_07_mobileteste.jpg");
+  /*background-image: url("../imagesmobile/SLIDE_07_mobile.jpg"); */
+  background-image: none;
 }
 #slide8 {
   /*background-image: url("../imagesmobile/SLIDE_08_mobile.jpg");*/

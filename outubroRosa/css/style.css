@@ -81,12 +81,14 @@ section#buttons a{
   color: #fff;
   text-decoration: none;
   font: 35pt;
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: 10;
 }
 section#buttons a:hover{
   background: #D54A6B;
+  opacity: 0.5;
 }
+
 
 .slidepadding{
   padding-top: 70px;
