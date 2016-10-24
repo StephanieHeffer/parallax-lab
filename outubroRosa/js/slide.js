@@ -193,13 +193,13 @@
 
         //mousewheel
         document.onmousewheel = function(e) {
-            //console.log('!!! mousewheel !!! Delta: ' + e.wheelDelta + '  detail: '+ e.detail);
-            //console.log(e);
+            let wheelDelta = e.wheelDelta == null || e.wheelDelta == undefined ? 0 : e.wheelDelta;
+            let detail = e.detail == null || e.detail == undefined ? 0 : e.detail;
 
             e.preventDefault();
-            if ((e.wheelDelta < 0) || (e.detail < 0)) {
+            if ((wheelDelta < 0) || (detail < 0)) {
                 goToNextSlide();
-            } else {
+            } else if ((wheelDelta > 0) || (detail > 0)) {
                 goToPreviousSlide();
             }
         };
