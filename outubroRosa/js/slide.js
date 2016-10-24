@@ -107,7 +107,7 @@
       } else {
         window.setTimeout(function(){
           fakeVideoPlay(frameList);
-        }, 200);
+        }, 1600);
       }
     }
 
